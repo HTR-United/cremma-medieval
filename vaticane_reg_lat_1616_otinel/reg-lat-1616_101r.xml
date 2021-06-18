@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+      xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# https://gitlab.inria.fr/scripta/escriptorium/-/raw/develop/app/escriptorium/static/alto-4-1-baselines.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>reg-lat-1616_101r.png</fileName>
+    </sourceImageInformation>
+  </Description>
+  
+  <Tags>
+    <OtherTag ID="BT1" LABEL="Title" DESCRIPTION="block type Title"/><OtherTag ID="BT2" LABEL="Main" DESCRIPTION="block type Main"/><OtherTag ID="BT607" LABEL="Damage" DESCRIPTION="block type Damage"/><OtherTag ID="BT608" LABEL="Decoration" DESCRIPTION="block type Decoration"/><OtherTag ID="BT609" LABEL="DropCapitalLine" DESCRIPTION="block type DropCapitalLine"/><OtherTag ID="BT610" LABEL="Figure" DESCRIPTION="block type Figure"/><OtherTag ID="BT611" LABEL="Margin" DESCRIPTION="block type Margin"/><OtherTag ID="BT612" LABEL="MusicNotation" DESCRIPTION="block type MusicNotation"/><OtherTag ID="BT613" LABEL="Numbering" DESCRIPTION="block type Numbering"/><OtherTag ID="BT614" LABEL="RunningTitle" DESCRIPTION="block type RunningTitle"/><OtherTag ID="BT615" LABEL="Seal" DESCRIPTION="block type Seal"/><OtherTag ID="BT616" LABEL="Signatures" DESCRIPTION="block type Signatures"/><OtherTag ID="BT617" LABEL="Stamp" DESCRIPTION="block type Stamp"/><OtherTag ID="BT618" LABEL="Table" DESCRIPTION="block type Table"/><OtherTag ID="BT619" LABEL="Title" DESCRIPTION="block type Title"/><OtherTag ID="BT620" LABEL="DropCapital" DESCRIPTION="block type DropCapital"/>
+    <OtherTag ID="LT216" LABEL="Default" DESCRIPTION="line type Default"/><OtherTag ID="LT217" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT218" LABEL="Interlinear" DESCRIPTION="line type Interlinear"/><OtherTag ID="LT219" LABEL="MusicLine" DESCRIPTION="line type MusicLine"/><OtherTag ID="LT220" LABEL="Rubric" DESCRIPTION="line type Rubric"/>
+  </Tags>
+  
+  <Layout>
+    <Page WIDTH="2509"
+          HEIGHT="3296"
+          PHYSICAL_IMG_NR="16"
+          ID="eSc_dummypage_">
+      <PrintSpace HPOS="0"
+                  VPOS="0"
+                  WIDTH="2509"
+                  HEIGHT="3296">
+        
+        <TextBlock HPOS="230.0"
+                   VPOS="318.0"
+                   WIDTH="1564.0"
+                   HEIGHT="2733.0"
+                   ID="eSc_textblock_c25fcae0"
+                   TAGREFS="BT2">
+          <Shape><Polygon POINTS="1445 318 1489 351 1456 557 1368 681 1379 975 1313 1216 1456 1263 1456 1326 1390 1362 1415 1439 1654 1461 1673 1502 1654 1546 1379 1582 1470 1691 1588 1702 1610 1755 1467 1834 1401 2054 1470 2175 1566 2197 1566 2271 1346 2337 1426 2493 1794 2515 1783 2601 1434 2636 1445 2787 1577 2944 1577 3018 274 3051 241 1867 263 1812 329 1821 340 1757 230 1722 230 439 263 318"/></Shape>
+          
+        </TextBlock>
+        
+        <TextBlock HPOS="87.0"
+                   VPOS="3164.0"
+                   WIDTH="31.0"
+                   HEIGHT="30.0"
+                   ID="eSc_textblock_a8551430"
+                   TAGREFS="BT">
+          <Shape><Polygon POINTS="118 3164 118 3194 87 3194 98 3164"/></Shape>
+          
+        </TextBlock>
+        
+        <TextBlock HPOS="210.0"
+                   VPOS="1689.0"
+                   WIDTH="187.0"
+                   HEIGHT="257.0"
+                   ID="eSc_textblock_334eca2f"
+                   TAGREFS="BT620">
+          <Shape><Polygon POINTS="210 1689 210 1946 397 1946 397 1689"/></Shape>
+          
+        </TextBlock>
+        
+
+        
+        <TextBlock ID="eSc_dummyblock_">
+          
+          
+          <TextLine ID="eSc_line_8da144a1"
+                    TAGREFS="LT216"
+                    BASELINE="247 392 1453 379" 
+                    HPOS="247.0"
+                    VPOS="379.0"
+                    WIDTH="1206.0"
+                    HEIGHT="13.0">
+            
+	    <String CONTENT=".r oll̃. dit apelle si li a dit maítenant"
+                    HPOS="247.0"
+                    VPOS="379.0"
+                    WIDTH="1206.0"
+                    HEIGHT="13.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_90fd662c"
+                    TAGREFS="LT216"
+                    BASELINE="241 480 1472 455" 
+                    HPOS="241.0"
+                    VPOS="455.0"
+                    WIDTH="1231.0"
+                    HEIGHT="25.0">
+            
+	    <String CONTENT="b iaus níes dit il ꝯ v⁹ est ꝯvevenant"
+                    HPOS="241.0"
+                    VPOS="455.0"
+                    WIDTH="1231.0"
+                    HEIGHT="25.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_fe43130d"
+                    TAGREFS="LT216"
+                    BASELINE="241 568 1439 552" 
+                    HPOS="241.0"
+                    VPOS="552.0"
+                    WIDTH="1198.0"
+                    HEIGHT="16.0">
+            
+	    <String CONTENT="d ites le moí qͣr jen suí ml̃t engͣnt"
+                    HPOS="241.0"
+                    VPOS="552.0"
+                    WIDTH="1198.0"
+                    HEIGHT="16.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_8a8b0cb0"
+                    TAGREFS="LT216"
+                    BASELINE="241 645 1371 628" 
+                    HPOS="241.0"
+                    VPOS="628.0"
+                    WIDTH="1130.0"
+                    HEIGHT="17.0">
+            
+	    <String CONTENT="s íre ml̃t bñ m͛ci dieu le poissant"
+                    HPOS="241.0"
+                    VPOS="628.0"
+                    WIDTH="1130.0"
+                    HEIGHT="17.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_24166730"
+                    TAGREFS="LT216"
+                    BASELINE="255 727 1335 716" 
+                    HPOS="255.0"
+                    VPOS="716.0"
+                    WIDTH="1080.0"
+                    HEIGHT="11.0">
+            
+	    <String CONTENT="ꝯ batus sui au melour ꝯbatant"
+                    HPOS="255.0"
+                    VPOS="716.0"
+                    WIDTH="1080.0"
+                    HEIGHT="11.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_b69b4727"
+                    TAGREFS="LT216"
+                    BASELINE="247 804 1330 793" 
+                    HPOS="247.0"
+                    VPOS="793.0"
+                    WIDTH="1083.0"
+                    HEIGHT="11.0">
+            
+	    <String CONTENT="q ͥ onq̃s fu ne james soit vivant"
+                    HPOS="247.0"
+                    VPOS="793.0"
+                    WIDTH="1083.0"
+                    HEIGHT="11.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_587d8842"
+                    TAGREFS="LT216"
+                    BASELINE="244 895 1343 884" 
+                    HPOS="244.0"
+                    VPOS="884.0"
+                    WIDTH="1099.0"
+                    HEIGHT="11.0">
+            
+	    <String CONTENT="l a m͛ci dieu esplotie avon tant"
+                    HPOS="244.0"
+                    VPOS="884.0"
+                    WIDTH="1099.0"
+                    HEIGHT="11.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_6fe83f32"
+                    TAGREFS="LT216"
+                    BASELINE="255 980 1357 969" 
+                    HPOS="255.0"
+                    VPOS="969.0"
+                    WIDTH="1102.0"
+                    HEIGHT="11.0">
+            
+	    <String CONTENT="C restiente veust  bautismant"
+                    HPOS="255.0"
+                    VPOS="969.0"
+                    WIDTH="1102.0"
+                    HEIGHT="11.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_3067fde8"
+                    TAGREFS="LT216"
+                    BASELINE="239 1068 1352 1051" 
+                    HPOS="239.0"
+                    VPOS="1051.0"
+                    WIDTH="1113.0"
+                    HEIGHT="17.0">
+            
+	    <String CONTENT="r ecevez le biausíre alez avant"
+                    HPOS="239.0"
+                    VPOS="1051.0"
+                    WIDTH="1113.0"
+                    HEIGHT="17.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_919c0a0c"
+                    TAGREFS="LT216"
+                    BASELINE="241 1153 1305 1142" 
+                    HPOS="241.0"
+                    VPOS="1142.0"
+                    WIDTH="1064.0"
+                    HEIGHT="11.0">
+            
+	    <String CONTENT="s i li donez auq̃s an son talant"
+                    HPOS="241.0"
+                    VPOS="1142.0"
+                    WIDTH="1064.0"
+                    HEIGHT="11.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_5b7166de"
+                    TAGREFS="LT216"
+                    BASELINE="252 1241 1247 1227" 
+                    HPOS="252.0"
+                    VPOS="1227.0"
+                    WIDTH="995.0"
+                    HEIGHT="14.0">
+            
+	    <String CONTENT="e nsor q̃tout vo file belisant"
+                    HPOS="252.0"
+                    VPOS="1227.0"
+                    WIDTH="995.0"
+                    HEIGHT="14.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_145147a3"
+                    TAGREFS="LT216"
+                    BASELINE="247 1329 1445 1307" 
+                    HPOS="247.0"
+                    VPOS="1307.0"
+                    WIDTH="1198.0"
+                    HEIGHT="22.0">
+            
+	    <String CONTENT="d íex aít lí roís jaí ce q̃ ge demant"
+                    HPOS="247.0"
+                    VPOS="1307.0"
+                    WIDTH="1198.0"
+                    HEIGHT="22.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_2d9bb655"
+                    TAGREFS="LT216"
+                    BASELINE="252 1395 1308 1381" 
+                    HPOS="252.0"
+                    VPOS="1381.0"
+                    WIDTH="1056.0"
+                    HEIGHT="14.0">
+            
+	    <String CONTENT="C est la proíre q̃ je aloie fesant"
+                    HPOS="252.0"
+                    VPOS="1381.0"
+                    WIDTH="1056.0"
+                    HEIGHT="14.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_251671f1"
+                    TAGREFS="LT216"
+                    BASELINE="250 1466 1379 1444" 
+                    HPOS="250.0"
+                    VPOS="1444.0"
+                    WIDTH="1129.0"
+                    HEIGHT="22.0">
+            
+	    <String CONTENT=".O . vont maitenant desermant"
+                    HPOS="250.0"
+                    VPOS="1444.0"
+                    WIDTH="1129.0"
+                    HEIGHT="22.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_e4ff873b"
+                    TAGREFS="LT216"
+                    BASELINE="252 1543 1659 1518" 
+                    HPOS="252.0"
+                    VPOS="1518.0"
+                    WIDTH="1407.0"
+                    HEIGHT="25.0">
+            
+	    <String CONTENT="p ⁹ le monterent sus .i. destrier courant"
+                    HPOS="252.0"
+                    VPOS="1518.0"
+                    WIDTH="1407.0"
+                    HEIGHT="25.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_deeba4fd"
+                    TAGREFS="LT216"
+                    BASELINE="250 1626 1308 1604" 
+                    HPOS="250.0"
+                    VPOS="1604.0"
+                    WIDTH="1058.0"
+                    HEIGHT="22.0">
+            
+	    <String CONTENT="v ͛s la cite sen vont esꝑonant"
+                    HPOS="250.0"
+                    VPOS="1604.0"
+                    WIDTH="1058.0"
+                    HEIGHT="22.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_de3741cd"
+                    TAGREFS="LT216"
+                    BASELINE="250 1711 1437 1683" 
+                    HPOS="250.0"
+                    VPOS="1683.0"
+                    WIDTH="1187.0"
+                    HEIGHT="28.0">
+            
+	    <String CONTENT="a u moutíer lont mene isnement"
+                    HPOS="250.0"
+                    VPOS="1683.0"
+                    WIDTH="1187.0"
+                    HEIGHT="28.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_5efb10eb"
+                    TAGREFS="LT217"
+                    BASELINE="236 1882 333 1882" 
+                    HPOS="233.0"
+                    VPOS="1788.0"
+                    WIDTH="94.0"
+                    HEIGHT="175.0">
+            <Shape><Polygon POINTS="233 1881 239 1799 269 1788 327 1796 327 1941 239 1963"/></Shape>
+	    <String CONTENT="A"
+                    HPOS="233.0"
+                    VPOS="1788.0"
+                    WIDTH="94.0"
+                    HEIGHT="175.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_4c097642"
+                    TAGREFS="LT216"
+                    BASELINE="357 1790 1591 1768" 
+                    HPOS="357.0"
+                    VPOS="1768.0"
+                    WIDTH="1234.0"
+                    HEIGHT="22.0">
+            
+	    <String CONTENT="u moutıer lont mene ſaı́nte marıe"
+                    HPOS="357.0"
+                    VPOS="1768.0"
+                    WIDTH="1234.0"
+                    HEIGHT="22.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_8ec139db"
+                    TAGREFS="LT216"
+                    BASELINE="362 1875 1448 1859" 
+                    HPOS="362.0"
+                    VPOS="1859.0"
+                    WIDTH="1086.0"
+                    HEIGHT="16.0">
+            
+	    <String CONTENT="T urpín de raíns a le stole seisíe"
+                    HPOS="362.0"
+                    VPOS="1859.0"
+                    WIDTH="1086.0"
+                    HEIGHT="16.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_f2141939"
+                    TAGREFS="LT216"
+                    BASELINE="245 1961 1393 1928" 
+                    HPOS="245.0"
+                    VPOS="1928.0"
+                    WIDTH="1148.0"
+                    HEIGHT="33.0">
+            
+	    <String CONTENT="l e satíer prent si dit la letaíníe"
+                    HPOS="245.0"
+                    VPOS="1928.0"
+                    WIDTH="1148.0"
+                    HEIGHT="33.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_e6c11bf7"
+                    TAGREFS="LT216"
+                    BASELINE="241 2043 1393 2005" 
+                    HPOS="241.0"
+                    VPOS="2005.0"
+                    WIDTH="1152.0"
+                    HEIGHT="38.0">
+            
+	    <String CONTENT="g ͣnt fu la prese de la chevaleríe"
+                    HPOS="241.0"
+                    VPOS="2005.0"
+                    WIDTH="1152.0"
+                    HEIGHT="38.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_20031cf7"
+                    TAGREFS="LT216"
+                    BASELINE="258 2109 1143 2095" 
+                    HPOS="258.0"
+                    VPOS="2095.0"
+                    WIDTH="885.0"
+                    HEIGHT="14.0">
+            
+	    <String CONTENT="p ᷑ .O. qͥ recoit bautestíre"
+                    HPOS="258.0"
+                    VPOS="2095.0"
+                    WIDTH="885.0"
+                    HEIGHT="14.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_9cdad1b2"
+                    TAGREFS="LT216"
+                    BASELINE="266 2194 560 2202 1420 2180" 
+                    HPOS="266.0"
+                    VPOS="2180.0"
+                    WIDTH="1154.0"
+                    HEIGHT="22.0">
+            
+	    <String CONTENT="s on parrĩ fu .kl̃. de saínt denise"
+                    HPOS="266.0"
+                    VPOS="2180.0"
+                    WIDTH="1154.0"
+                    HEIGHT="22.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_5f414562"
+                    TAGREFS="LT216"
+                    BASELINE="257 2284 1552 2260" 
+                    HPOS="257.0"
+                    VPOS="2260.0"
+                    WIDTH="1295.0"
+                    HEIGHT="24.0">
+            
+	    <String CONTENT="s on nõ li lessent ne li chagierent míe"
+                    HPOS="257.0"
+                    VPOS="2260.0"
+                    WIDTH="1295.0"
+                    HEIGHT="24.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_301b19f6"
+                    TAGREFS="LT216"
+                    BASELINE="255 2364 1258 2334" 
+                    HPOS="255.0"
+                    VPOS="2334.0"
+                    WIDTH="1003.0"
+                    HEIGHT="30.0">
+            
+	    <String CONTENT="b autise fu si a sa loí grepíe"
+                    HPOS="255.0"
+                    VPOS="2334.0"
+                    WIDTH="1003.0"
+                    HEIGHT="30.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_03c5a626"
+                    TAGREFS="LT216"
+                    BASELINE="280 2447 1330 2425" 
+                    HPOS="280.0"
+                    VPOS="2425.0"
+                    WIDTH="1050.0"
+                    HEIGHT="22.0">
+            
+	    <String CONTENT="s i crut en dieu le fíx s̃. maríe"
+                    HPOS="280.0"
+                    VPOS="2425.0"
+                    WIDTH="1050.0"
+                    HEIGHT="22.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_50217656"
+                    TAGREFS="LT216"
+                    BASELINE="274 2529 1376 2499" 
+                    HPOS="274.0"
+                    VPOS="2499.0"
+                    WIDTH="1102.0"
+                    HEIGHT="30.0">
+            
+	    <String CONTENT="a tant ez v⁹ belissant lechevíe"
+                    HPOS="274.0"
+                    VPOS="2499.0"
+                    WIDTH="1102.0"
+                    HEIGHT="30.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_108ef6be"
+                    TAGREFS="LT216"
+                    BASELINE="272 2612 1775 2579" 
+                    HPOS="272.0"
+                    VPOS="2579.0"
+                    WIDTH="1503.0"
+                    HEIGHT="33.0">
+            
+	    <String CONTENT="e lle est pl⁹ cheiii p blanche q̃ nule magerie"
+                    HPOS="272.0"
+                    VPOS="2579.0"
+                    WIDTH="1503.0"
+                    HEIGHT="33.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_2e7b7320"
+                    TAGREFS="LT216"
+                    BASELINE="269 2688 1244 2667" 
+                    HPOS="269.0"
+                    VPOS="2667.0"
+                    WIDTH="975.0"
+                    HEIGHT="21.0">
+            
+	    <String CONTENT=" pl⁹ v͛moille q̃ rosse floríe"
+                    HPOS="269.0"
+                    VPOS="2667.0"
+                    WIDTH="975.0"
+                    HEIGHT="21.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_c12636ea"
+                    TAGREFS="LT216"
+                    BASELINE="269 2765 1390 2738" 
+                    HPOS="269.0"
+                    VPOS="2738.0"
+                    WIDTH="1121.0"
+                    HEIGHT="27.0">
+            
+	    <String CONTENT="f ile dit .kl̃. ml̃t estes couloríe"
+                    HPOS="269.0"
+                    VPOS="2738.0"
+                    WIDTH="1121.0"
+                    HEIGHT="27.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_3dc25271"
+                    TAGREFS="LT216"
+                    BASELINE="283 2848 1418 2823" 
+                    HPOS="283.0"
+                    VPOS="2823.0"
+                    WIDTH="1135.0"
+                    HEIGHT="25.0">
+            
+	    <String CONTENT="q ͥ une nuit v⁹ avroit an baillíe"
+                    HPOS="283.0"
+                    VPOS="2823.0"
+                    WIDTH="1135.0"
+                    HEIGHT="25.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_a469170a"
+                    TAGREFS="LT216"
+                    BASELINE="272 2941 1492 2916" 
+                    HPOS="272.0"
+                    VPOS="2916.0"
+                    WIDTH="1220.0"
+                    HEIGHT="25.0">
+            
+	    <String CONTENT="b ñ devroit estre sa valor enforcíe"
+                    HPOS="272.0"
+                    VPOS="2916.0"
+                    WIDTH="1220.0"
+                    HEIGHT="25.0"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_fde31180"
+                    TAGREFS="LT216"
+                    BASELINE="280 3032 1571 3004" 
+                    HPOS="280.0"
+                    VPOS="3004.0"
+                    WIDTH="1291.0"
+                    HEIGHT="28.0">
+            
+	    <String CONTENT="n e li devroit menbrer de couardie"
+                    HPOS="280.0"
+                    VPOS="3004.0"
+                    WIDTH="1291.0"
+                    HEIGHT="28.0"></String>
+          </TextLine>
+
+          
+        </TextBlock>
+        
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>
