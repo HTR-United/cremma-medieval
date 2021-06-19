@@ -1,0 +1,1239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ALTO: Analyzed Layout and Text Object  -->
+<!-- This document is available under the Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0 - https://creativecommons.org/licenses/by-sa/4.0/ ). 
+The ALTO Editorial Board has waived all rights to it worldwide under copyright law with confirmation of the original creating authors, including all related and neighboring rights, to the extent allowed by law.
+For the full text see https://creativecommons.org/licenses/by-sa/4.0/legalcode. -->
+
+<!-- Originally created during the EU-funded Project METAe, the Metadata Engine Project (2001 - 2003), by Alexander Egger (1), Birgit Stehno (2) and Gregor Retti (2), (1) University of Graz and (2) University of Innsbruck, Austria with contributions of Ralph Tiede, CCS GmbH, Germany -->
+<!-- Prepared for the Library of Congress by Ralph Tiede, CCS GmbH, with the assistance of Justin Littman (Library of Congress). -->
+
+<!-- Version 4.0 -->
+
+<!-- Change History -->
+<!-- June 22, 2004: Version finalized for docWORKS/METAe -->
+<!-- November 19, 2004: Modifications requested by Justin Littman -->
+<!-- Modifications of November 19, 2004: 
+	1. add "Description" element
+	2. change "InnerMargin/OuterMargin" to "LeftMargin/RightMargin", add "POSITION" attribute to "PAGE" element
+	3. add "PROCESSING" attribute to "PAGE" element
+	4. internal changes to validate with Xerces parser
+	5. define fontstyles by enumerations
+	6. change "WC" (word confidence) attribute to xs:float in range of "0" to "1".
+	7. Add "ALTERNATIVE" als childs to "STRING" element 
+	8. Add "language" attribute to "Textblock" and "STRING" element
+-->
+<!-- Modifications of December 02, 2004: 
+	1. fixed problem with multiple use of blockgroup
+	2. add measurement enumeration 'inch1200'
+-->
+<!-- Modifications of December 14, 2004:
+	1. "FILEID" (attribute of "ComposedBlock"): change type from xs:IDREF to xs:string
+	2. include minor changes requested by JDL
+	3. change "ZORDER" to "IDNEXT" (attribute of "BlockType")
+-->
+<!-- Modifications of February 24, 2006:
+	1. ACCURACY attribute added to PAGE element to store information on OCR accuracy
+	2. CS attribute added to TEXTLINE element to indicate manual correction status
+-->
+<!-- Modifications of June 20, 2007 (version 1.3):
+	1. Adaption of xlink namespace and schema location to prevent conflicts on XSL transformations in combination with used namespace in original METS file
+-->
+<!-- Modifications of August 27, 2007 (version 1.4):
+	1. add "QUALITY_DETAIL" attribute to "PAGE" element (gives more details about the page quality, is a free string comparing with QUALITY attribute which is a restrictive one)
+	2. add "Cover" to "POSITION" attribute of "PAGE" element
+	3. specification of interpretation of confidence values (CC, WC, PC and ACCURACY)
+-->
+<!-- Modifications of August 7, 2009:
+	1. Change namespace from old CCS URI to LC-based URI.
+	2. Use standard LC XLink Schema.
+	3. Push version to 2.0 to reflect change in maintenance agency.
+	4. Remove CCS copyright statement.
+	5. Rollback to model used in 1.4 schema except with the changes itemized in 1-4 of this change note.  An incorrect version of the 2.0 alpha schema was public until 2010-01-11.  The incorrect version was a derivative of the Library of Congress's custom ALTO XML Schema that introduced new elements and attributes. 
+-->
+<!-- Modifications of January 11, 2010:
+	1. Rollback to model used in 1.4 schema except with the changes itemized in 1-4 of the previous change note of August 7, 2009.  An incorrect version of the 2.0 alpha schema was public until 2010-01-11.  The incorrect version was a derivative of the Library of Congress's custom ALTO XML Schema that introduced new elements and attributes that extended the 1.4 model prior to editorial board approval. 
+-->
+<!-- February 20, 2014, version 2.1:
+	1. Page and BlockType element HEIGHT, WIDTH, HPOS, VPOS attribute types changed to xs:float from xs:int.
+	2. CircleType  HPOS, VPOS and RADIUS attribute type definitions added as xs:float and made mandatory. Element annotation clarified.
+	3. EllipseType HPOS,VPOS,HLENGTH and VLENGTH attribute type definitions added as xs:float and made mandatory. Element annotation clarified.
+	4. MeasurementUnit defined as mandatory and element annotation clarified.
+	5. HYP element's CONTENT attribute type definition added as xs:string.
+	6. Tags (LayoutTag/StructureTag/RoleTag/NamedEntityTag/OtherTag) added to allow for tagging content. TAGREFS attribute added to BlockTypes, TextLine and String
+	7. CS attribute added to String and Block.
+	8. LANG attribute added to String, TextLine and TextBlock. "language" attribute in TextBlock deprecated.
+	9. HEIGHT attribute added to HYP and SP elements.
+-->
+<!-- April, 2014, version 2.2 DRAFT:
+	1. Anonymous types changed to named types (to allow use of xs:redefine mechanism)	
+-->
+<!-- July 2014, version 2.2 DRAFT
+	1. Version added to xs:schema.
+	2. SCHEMAVERSION attribute added to <alto> element.
+	3. documentIdentifier element added to <sourceImageInformationType> element (+ documentIdentifierLocation attribute)
+-->
+<!-- August 2014, version 3.0
+	1. Changed namespace and targetNamespace to http://www.loc.gov/standards/alto/ns-v3#
+	2. Changed schema version to 3.0 
+
+	ALTO schemas will be updated by whole numbers upon making changes that break backward compatibility (version 1 to version 2), 
+	and decimals for changes that will not (2.0 to 2.1). The namespace itself will also only change on major versions (ns-v2 to ns-v3). 
+-->
+<!-- January 2016, version 3.1
+	1. Changed schema version to 3.1
+	2. Added support for using different shapes for the elements String, TextLine, all PageSpaceType elements and on all BlockType elements.
+	3. The description of the attribute ROTATION is changed to the rotation of the contents of a block and not the block itself. The attribute is inherited by all sub elements.
+-->
+<!-- January 2018, version 4.0
+	1. Changed schema version to 4.0
+	2. Changed namespace and targetNamespace to http://www.loc.gov/standards/alto/ns-v4#
+	3. Clarification and definition of the licensing to common standard "CC BY-SA 4.0" for this ALTO standard (with agreement of the authors)
+	4. Added character based text description with new Glyph element and its subelement Variant (GlyphType, VariantType)
+	5. Extended annotation for clarification of the difference of existing element ALTERNATIVE and Glyph/Variant
+	6. Introduce generic "Processing" and deprecate "OcrProcessing"
+	7. Introduce generic "processingStep" with "ProcessingStepType" and required attribute "ID" and deprecate "preProcessingStep", "ocrProcessingStep", "postProcessingStep"
+	8. Add common vocabulary for "processingStep" comprising the "ContentGeneration", "ContentModification", "PreOperation", "PostOperation", "Other"
+	9. Fix for the element Shape. The Shape element can now only be used once within a PageSpace or a TextLine as it was intended.
+-->
+
+<!-- 19 mai 2021, costumisation for CREMMA transcription
+	1. shape required in textLine
+	2. addition of Segmento ontology for Blocks and Lines
+-->
+
+<xs:schema xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink"
+	targetNamespace="http://www.loc.gov/standards/alto/ns-v4#" elementFormDefault="qualified"
+	attributeFormDefault="unqualified" version="4.0">
+	<xs:import namespace="http://www.w3.org/1999/xlink"
+		schemaLocation="http://www.loc.gov/standards/xlink/xlink.xsd"/>
+	<xs:element name="alto" type="altoType">
+		<xs:annotation>
+			<xs:documentation>ALTO (analyzed layout and text object) stores layout information and
+				OCR recognized text of pages of any kind of printed documents like books, journals
+				and newspapers. ALTO is a standardized XML format to store layout and content
+				information. It is designed to be used as an extension schema to METS (Metadata
+				Encoding and Transmission Standard), where METS provides metadata and structural
+				information while ALTO contains content and physical information.
+			</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="altoType">
+		<xs:sequence>
+			<xs:element name="Description" type="DescriptionType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Describes general settings of the alto file like measurement
+						units and metadata</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Styles" type="StylesType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Styles define properties of layout elements. A style defined
+						in a parent element is used as default style for all related children
+						elements. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Tags" type="TagsType" minOccurs="1">
+				<xs:annotation>
+					<xs:documentation> Tag define properties of additional characteristic. The tags
+						are referenced from related content element on Block or String element by
+						attribute TAGREF via the tag ID. This container element contains the
+						individual elements for LayoutTags, StructureTags, RoleTags, NamedEntityTags
+						and OtherTags Addenda Segmento: Mandatory. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Layout" type="LayoutType">
+				<xs:annotation>
+					<xs:documentation>The root layout element.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="SCHEMAVERSION" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>Schema version of the ALTO file.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="DescriptionType">
+		<xs:sequence>
+			<xs:element name="MeasurementUnit" type="MeasurementUnitType" minOccurs="1"/>
+			<xs:element name="sourceImageInformation" type="sourceImageInformationType"
+				minOccurs="0"/>
+			<xs:element name="OCRProcessing" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Element deprecated. 'Processing' should be used
+						instead.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="ocrProcessingType">
+							<xs:attribute name="ID" type="xs:ID" use="required"/>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Processing" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="processingStepType">
+							<xs:attribute name="ID" type="xs:ID" use="required"/>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="StylesType">
+		<xs:sequence>
+			<xs:element name="TextStyle" type="TextStyleType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="ParagraphStyle" type="ParagraphStyleType" minOccurs="0"
+				maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TagsType">
+		<xs:annotation>
+			<xs:documentation> There are following variation of tag types available: LayoutTag –
+				criteria about arrangement or graphical appearance StructureTag – criteria about
+				grouping or formation RoleTag – criteria about function or mission NamedEntityTag –
+				criteria about assignment of terms to their relationship / meaning (NER) OtherTag –
+				criteria about any other characteristic not listed above, the TYPE attribute is
+				intended to be used for classification within those. </xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:choice minOccurs="1" maxOccurs="unbounded">
+				<xs:element name="OtherTag" type="SegmentoTag">
+				</xs:element>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- A l'avenir, restreindre des ID spécifiques pour les lignes et pour les block 
+	<xs:simpleType name="SegmentoLineTypeID">
+		<xs:restriction base="xs:ID"/>
+	</xs:simpleType>
+	<xs:simpleType name="SegmentoLineTypeIDREF">
+		<xs:restriction base="xs:IDREF"/>
+	</xs:simpleType>
+	<xs:simpleType name="SegmentoBlockTypeID">
+		<xs:restriction base="xs:ID"/>
+	</xs:simpleType>
+	<xs:simpleType name="SegmentoBlockTypeIDREF">
+		<xs:restriction base="xs:IDREF"/>
+	</xs:simpleType>
+	-->
+	<xs:complexType name="SegmentoTag">
+		<xs:annotation>
+			<xs:documentation>Gives the labels corresponding to Segemento ontology</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="LABEL" use="required">
+			<xs:simpleType>
+				<xs:union memberTypes="SegmentoLineLabels SegmentoBlockLabels"/>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="DESCRIPTION" type="xs:string"/>
+		<xs:attribute name="ID" use="required" type="xs:ID"/>
+	</xs:complexType>
+	<xs:simpleType name="SegmentoLineLabels">
+		<xs:annotation>
+			<xs:documentation>List of segmento Line Labels</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Default"/>
+			<xs:enumeration value="DropCapitalLine"/>
+			<xs:enumeration value="Interlinear"/>
+			<xs:enumeration value="MusicLine"/>
+			<xs:enumeration value="Rubric"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SegmentoBlockLabels">
+		<xs:annotation>
+			<xs:documentation>List of segmento Block Labels</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Damage"/>
+			<xs:enumeration value="Decoration"/>
+			<xs:enumeration value="DropCapital"/>
+			<xs:enumeration value="Figure"/>
+			<xs:enumeration value="Main"/>
+			<xs:enumeration value="Margin"/>
+			<xs:enumeration value="MusicNotation"/>
+			<xs:enumeration value="Numbering"/>
+			<xs:enumeration value="RunningTitle"/>
+			<xs:enumeration value="Seal"/>
+			<xs:enumeration value="Signatures"/>
+			<xs:enumeration value="Stamp"/>
+			<xs:enumeration value="Table"/>
+			<xs:enumeration value="Title"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="QualityType">
+		<xs:annotation>
+			<xs:documentation>Gives brief information about original page quality</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="OK"/>
+			<xs:enumeration value="Missing"/>
+			<xs:enumeration value="Missing in original"/>
+			<xs:enumeration value="Damaged"/>
+			<xs:enumeration value="Retained"/>
+			<xs:enumeration value="Target"/>
+			<xs:enumeration value="As in original"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="QualityDetailType">
+		<xs:annotation>
+			<xs:documentation>Gives more details about the original page quality, since QUALITY
+				attribute gives only brief and restrictive information</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:simpleType name="PositionType">
+		<xs:annotation>
+			<xs:documentation>Position of the page. Could be lefthanded, righthanded, cover, foldout
+				or single if it has no special position.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Left"/>
+			<xs:enumeration value="Right"/>
+			<xs:enumeration value="Foldout"/>
+			<xs:enumeration value="Single"/>
+			<xs:enumeration value="Cover"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="PCType">
+		<xs:annotation>
+			<xs:documentation>Page Confidence: Confidence level of the ocr for this page. A value
+				between 0 (unsure) and 1 (sure). </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:float">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="PageType">
+		<xs:annotation>
+			<xs:documentation>One page of a book or journal.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TopMargin" type="PageSpaceType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The area between the top line of print and the upper edge of
+						the leaf. It may contain page number or running title.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LeftMargin" type="PageSpaceType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The area between the printspace and the left border of a page.
+						May contain margin notes.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RightMargin" type="PageSpaceType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The area between the printspace and the right border of a
+						page. May contain margin notes.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="BottomMargin" type="PageSpaceType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The area between the bottom line of letterpress or writing and
+						the bottom edge of the leaf. It may contain a page number, a signature
+						number or a catch word.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="PrintSpace" type="PageSpaceType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Rectangle covering the printed area of a page. Page number and
+						running title are not part of the print space. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="ID" type="PageID" use="required"/>
+		<xs:attribute name="PAGECLASS" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>Any user-defined class like title page.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="STYLEREFS" type="xs:IDREFS" use="optional"/>
+		<xs:attribute name="HEIGHT" type="xs:float" use="optional"/>
+		<xs:attribute name="WIDTH" type="xs:float" use="optional"/>
+		<xs:attribute name="PHYSICAL_IMG_NR" type="xs:float" use="required">
+			<xs:annotation>
+				<xs:documentation>The number of the page within the document.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="PRINTED_IMG_NR" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>The page number that is printed on the page.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="QUALITY" type="QualityType" use="optional"/>
+		<xs:attribute name="QUALITY_DETAIL" type="QualityDetailType" use="optional"/>
+		<xs:attribute name="POSITION" type="PositionType" use="optional"/>
+		<xs:attribute name="PROCESSING" type="xs:IDREF" use="optional">
+			<xs:annotation>
+				<xs:documentation>A link to the processing description that has been used for this
+					page.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="ACCURACY" type="xs:float" use="optional">
+			<xs:annotation>
+				<xs:documentation>Estimated percentage of OCR Accuracy in range from 0 to 100
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="PC" type="PCType" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="LayoutType">
+		<xs:sequence>
+			<xs:element name="Page" type="PageType" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="STYLEREFS" type="xs:IDREFS"/>
+	</xs:complexType>
+	<xs:complexType name="TextStyleType">
+		<xs:annotation>
+			<xs:documentation>A text style defines font properties of text. </xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="ID" type="xs:ID"/>
+		<xs:attributeGroup ref="formattingAttributeGroup"/>
+	</xs:complexType>
+	<xs:complexType name="ParagraphStyleType">
+		<xs:annotation>
+			<xs:documentation>A paragraph style defines formatting properties of text
+				blocks.</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="ID" type="ParagraphStyleID" use="required"/>
+		<xs:attribute name="ALIGN" use="optional">
+			<xs:annotation>
+				<xs:documentation>Indicates the alignement of the paragraph. Could be left, right,
+					center or justify.</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Left"/>
+					<xs:enumeration value="Right"/>
+					<xs:enumeration value="Center"/>
+					<xs:enumeration value="Block"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="LEFT" type="xs:float" use="optional">
+			<xs:annotation>
+				<xs:documentation>Left indent of the paragraph in relation to the
+					column.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="RIGHT" type="xs:float" use="optional">
+			<xs:annotation>
+				<xs:documentation>Right indent of the paragraph in relation to the
+					column.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="LINESPACE" type="xs:float" use="optional">
+			<xs:annotation>
+				<xs:documentation>Line spacing between two lines of the paragraph. Measurement
+					calculated from baseline to baseline.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="FIRSTLINE" type="xs:float" use="optional">
+			<xs:annotation>
+				<xs:documentation>Indent of the first line of the paragraph if this is different
+					from the other lines. A negative value indicates an indent to the left, a
+					positive value indicates an indent to the right.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:simpleType name="SPTypeID">
+		<xs:restriction base="xs:ID"/>
+	</xs:simpleType>
+	<xs:simpleType name="PageSpaceTypeID">
+		<xs:restriction base="xs:ID"/>
+	</xs:simpleType>
+	<xs:simpleType name="ParagraphStyleID">
+		<xs:restriction base="xs:ID"/>
+	</xs:simpleType>
+	<xs:simpleType name="PageID">
+		<xs:restriction base="xs:ID"/>
+	</xs:simpleType>
+	<xs:simpleType name="BlockTypeID">
+		<xs:restriction base="xs:ID"/>
+	</xs:simpleType>
+	<xs:simpleType name="StringTypeID">
+		<xs:restriction base="xs:ID"/>
+	</xs:simpleType>
+	<xs:simpleType name="TextLineID">
+		<xs:restriction base="xs:ID"/>
+	</xs:simpleType>
+	<xs:group name="BlockGroup">
+		<xs:annotation>
+			<xs:documentation>Group of available block types</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:element name="TextBlock" type="TextBlockType">
+				<xs:annotation>
+					<xs:documentation>A block of text.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Illustration" type="IllustrationType">
+				<xs:annotation>
+					<xs:documentation>A picture or image.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="GraphicalElement" type="GraphicalElementType">
+				<xs:annotation>
+					<xs:documentation>A graphic used to separate blocks. Usually a line or
+						rectangle.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ComposedBlock" type="ComposedBlockType">
+				<xs:annotation>
+					<xs:documentation>A block that consists of other blocks</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:choice>
+	</xs:group>
+	<xs:complexType name="BlockType">
+		<xs:annotation>
+			<xs:documentation>Base type for any kind of block on the page.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence minOccurs="0">
+			<xs:element name="Shape" type="ShapeType"/>
+		</xs:sequence>
+		<xs:attribute name="ID" type="BlockTypeID" use="required"/>
+		<xs:attribute name="STYLEREFS" type="xs:IDREFS"/>
+		<xs:attribute name="TAGREFS" type="xs:IDREFS" use="optional"/>
+		<xs:attribute name="HEIGHT" type="xs:float" use="optional"/>
+		<xs:attribute name="WIDTH" type="xs:float" use="optional"/>
+		<xs:attribute name="HPOS" type="xs:float" use="optional"/>
+		<xs:attribute name="VPOS" type="xs:float" use="optional"/>
+		<xs:attribute name="ROTATION" type="xs:float" use="optional">
+			<xs:annotation>
+				<xs:documentation>Tells the rotation of e.g. text or illustration within the block.
+					The value is in degree counterclockwise.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="IDNEXT" type="xs:IDREF" use="optional">
+			<xs:annotation>
+				<xs:documentation>The next block in reading sequence on the page.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="CS" type="xs:boolean" use="optional">
+			<xs:annotation>
+				<xs:documentation>Correction Status. Indicates whether manual correction has been
+					done or not. The correction status should be recorded at the highest level
+					possible (Block, TextLine, String).</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attributeGroup ref="xlink:simpleLink"/>
+	</xs:complexType>
+	<xs:complexType name="SPType">
+		<xs:annotation>
+			<xs:documentation>A white space.</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="ID" type="SPTypeID" use="optional"/>
+		<xs:attribute name="HEIGHT" type="xs:float" use="optional"/>
+		<xs:attribute name="WIDTH" type="xs:float" use="optional"/>
+		<xs:attribute name="HPOS" type="xs:float" use="optional"/>
+		<xs:attribute name="VPOS" type="xs:float" use="optional"/>
+	</xs:complexType>
+	<xs:simpleType name="SUBS_TYPEType">
+		<xs:annotation>
+			<xs:documentation>Type of the substitution (if any).</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="HypPart1"/>
+			<xs:enumeration value="HypPart2"/>
+			<xs:enumeration value="Abbreviation"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CONTENTType">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="preserve"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="WCType">
+		<xs:annotation>
+			<xs:documentation>Word Confidence: Confidence level of the ocr for this string. A value
+				between 0 (unsure) and 1 (sure). </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:float">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="ALTERNATIVEType">
+		<xs:annotation>
+			<xs:documentation> Any alternative for the word. Alternative can outline a variant of
+				writing by new typing / spelling rules, typically manually done or by dictionary
+				replacements. The above sample is an old composed character "Æ" of ancient time,
+				which is replaced now by "Ä". As variant are meant alternatives of the real printed
+				content which are options outlined by the text recognition process. Similar sample:
+				"Straße" vs. "Strasse". Such alternatives are not coming from text recognition.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="PURPOSE" type="xs:string" use="optional">
+					<xs:annotation>
+						<xs:documentation>Identifies the purpose of the
+							alternative.</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="StringType" mixed="false">
+		<xs:annotation>
+			<xs:documentation>A sequence of chars. Strings are separated by white spaces or
+				hyphenation chars.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence minOccurs="0">
+			<xs:element name="Shape" type="ShapeType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="ALTERNATIVE" type="ALTERNATIVEType" minOccurs="0"
+				maxOccurs="unbounded"/>
+			<xs:element name="Glyph" type="GlyphType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="ID" type="StringTypeID" use="optional"/>
+		<xs:attribute name="STYLEREFS" type="xs:IDREFS" use="optional"/>
+		<xs:attribute name="TAGREFS" type="xs:IDREFS" use="optional"/>
+		<xs:attribute name="HEIGHT" type="xs:float" use="optional"/>
+		<xs:attribute name="WIDTH" type="xs:float" use="optional"/>
+		<xs:attribute name="HPOS" type="xs:float" use="optional"/>
+		<xs:attribute name="VPOS" type="xs:float" use="optional"/>
+		<xs:attribute name="CONTENT" type="CONTENTType" use="required"/>
+		<xs:attribute name="STYLE" type="fontStylesType" use="optional"/>
+		<xs:attribute name="SUBS_TYPE" type="SUBS_TYPEType" use="optional"/>
+		<xs:attribute name="SUBS_CONTENT" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>Content of the substitution.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="WC" type="WCType" use="optional"/>
+		<xs:attribute name="CC" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>Confidence level of each character in that string. A list of
+					numbers, one number between 0 (sure) and 9 (unsure) for each
+					character.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="CS" type="xs:boolean" use="optional">
+			<xs:annotation>
+				<xs:documentation>Correction Status. Indicates whether manual correction has been
+					done or not. The correction status should be recorded at the highest level
+					possible (Block, TextLine, String).</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="LANG" type="xs:language" use="optional">
+			<xs:annotation>
+				<xs:documentation>Attribute to record language of the string. The language should be
+					recorded at the highest level possible.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="PageSpaceType">
+		<xs:annotation>
+			<xs:documentation>A region on a page</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Shape" type="ShapeType" minOccurs="0" maxOccurs="1"/>
+			<xs:sequence minOccurs="0" maxOccurs="unbounded">
+				<xs:group ref="BlockGroup"/>
+			</xs:sequence>
+		</xs:sequence>
+		<xs:attribute name="ID" type="PageSpaceTypeID" use="optional"/>
+		<xs:attribute name="STYLEREFS" type="xs:IDREFS" use="optional"/>
+		<xs:attribute name="HEIGHT" type="xs:float" use="optional"/>
+		<xs:attribute name="WIDTH" type="xs:float" use="optional"/>
+		<xs:attribute name="HPOS" type="xs:float" use="optional"/>
+		<xs:attribute name="VPOS" type="xs:float" use="optional"/>
+	</xs:complexType>
+	<xs:simpleType name="PointsType">
+		<xs:annotation>
+			<xs:documentation>A list of points</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:complexType name="ShapeType">
+		<xs:annotation>
+			<xs:documentation>Describes the bounding shape of a block, if it is not
+				rectangular.</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:element name="Polygon" type="PolygonType"/>
+			<xs:element name="Ellipse" type="EllipseType"/>
+			<xs:element name="Circle" type="CircleType"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="PolygonType">
+		<xs:annotation>
+			<xs:documentation>A polygon shape.</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="POINTS" type="PointsType" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="EllipseType">
+		<xs:annotation>
+			<xs:documentation>An ellipse shape. HPOS and VPOS describe the center of the ellipse.
+				HLENGTH and VLENGTH are the width and height of the described
+				ellipse.</xs:documentation>
+			<xs:documentation>The attribute ROTATION tells the rotation of the e.g. text or
+				illustration within the block. The value is in degrees counterclockwise.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="HPOS" type="xs:float" use="required"/>
+		<xs:attribute name="VPOS" type="xs:float" use="required"/>
+		<xs:attribute name="HLENGTH" type="xs:float" use="required"/>
+		<xs:attribute name="VLENGTH" type="xs:float" use="required"/>
+		<xs:attribute name="ROTATION" type="xs:float" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="CircleType">
+		<xs:annotation>
+			<xs:documentation>A circle shape. HPOS and VPOS describe the center of the
+				circle.</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="HPOS" type="xs:float" use="required"/>
+		<xs:attribute name="VPOS" type="xs:float" use="required"/>
+		<xs:attribute name="RADIUS" type="xs:float" use="required"/>
+	</xs:complexType>
+	<xs:attributeGroup name="formattingAttributeGroup">
+		<xs:annotation>
+			<xs:documentation>Formatting attributes. Note that these attributes are assumed to be
+				inherited from ancestor elements of the document hierarchy.</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="FONTFAMILY" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>The font name.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="FONTTYPE" type="fontTypeType" use="optional"/>
+		<xs:attribute name="FONTWIDTH" type="fontWidthType" use="optional"/>
+		<xs:attribute name="FONTSIZE" type="xs:float" use="required">
+			<xs:annotation>
+				<xs:documentation>The font size, in points (1/72 of an inch).</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="FONTCOLOR" type="xs:hexBinary" use="optional">
+			<xs:annotation>
+				<xs:documentation>Font color as RGB value</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="FONTSTYLE" type="fontStylesType" use="optional"/>
+	</xs:attributeGroup>
+	<xs:simpleType name="fontTypeType">
+		<xs:annotation>
+			<xs:documentation>Serif or Sans-Serif</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="serif"/>
+			<xs:enumeration value="sans-serif"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="fontWidthType">
+		<xs:annotation>
+			<xs:documentation>fixed or proportional</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="proportional"/>
+			<xs:enumeration value="fixed"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="MeasurementUnitType">
+		<xs:annotation>
+			<xs:documentation> All measurement values inside the alto file are related to this unit,
+				except the font size. Coordinates as being used in HPOS and VPOS are absolute
+				coordinates referring to the upper-left corner of a page. The upper left corner of
+				the page is defined as coordinate (0/0). values meaning: mm10: 1/10th of millimeter
+				inch1200: 1/1200th of inch pixel: 1 pixel The values for pixel will be related to
+				the resolution of the image based on which the layout is described. Incase the
+				original image is not known the scaling factor can be calculated based on total
+				width and height of the image and the according information of the PAGE element.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="pixel"/>
+			<xs:enumeration value="mm10"/>
+			<xs:enumeration value="inch1200"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="sourceImageInformationType">
+		<xs:annotation>
+			<xs:documentation>Information to identify the image file from which the OCR text was
+				created.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="fileName" type="fileNameType" minOccurs="0"/>
+			<xs:element name="fileIdentifier" type="fileIdentifierType" minOccurs="0"
+				maxOccurs="unbounded"/>
+			<xs:element name="documentIdentifier" type="documentIdentifierType" minOccurs="0"
+				maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="fileNameType">
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:simpleType name="fileIdentifierValueType">
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:simpleType name="fileIdentifierLocationValueType">
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:complexType name="fileIdentifierType">
+		<xs:annotation>
+			<xs:documentation>A unique identifier for the image file. This is drawn from
+				MIX.</xs:documentation>
+			<xs:documentation> This identifier must be unique within the local system. To facilitate
+				file sharing or interoperability with other systems, fileIdentifierLocation may be
+				added to designate the system or application where the identifier is
+				unique.</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="fileIdentifierValueType">
+				<xs:attribute name="fileIdentifierLocation" type="fileIdentifierLocationValueType">
+					<xs:annotation>
+						<xs:documentation>A location qualifier, i.e., a
+							namespace.</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:simpleType name="documentIdentifierValueType">
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:simpleType name="documentIdentifierLocationValueType">
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:complexType name="documentIdentifierType">
+		<xs:annotation>
+			<xs:documentation>A unique identifier for the document.</xs:documentation>
+			<xs:documentation> This identifier must be unique within the local system. To facilitate
+				file sharing or interoperability with other systems, documentIdentifierLocation may
+				be added to designate the system or application where the identifier is
+				unique.</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="documentIdentifierValueType">
+				<xs:attribute name="documentIdentifierLocation"
+					type="documentIdentifierLocationValueType">
+					<xs:annotation>
+						<xs:documentation>A location qualifier, i.e., a
+							namespace.</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="ocrProcessingType">
+		<xs:annotation>
+			<xs:documentation>Deprecated. processingType should be used instead.</xs:documentation>
+			<xs:documentation>Information on how the text was created, including preprocessing, OCR
+				processing, and postprocessing steps. Where possible, this draws from MIX's change
+				history.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="preProcessingStep" type="processingStepType" minOccurs="0"
+				maxOccurs="unbounded"/>
+			<xs:element name="ocrProcessingStep" type="processingStepType"/>
+			<xs:element name="postProcessingStep" type="processingStepType" minOccurs="0"
+				maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="processingType">
+		<xs:annotation>
+			<xs:documentation>Information on how the text was created, including generation,
+				modification, preprocessing, postprocessing or any other steps. May include
+				references to a list of space-separated IDs of elements
+				processed.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="contentGeneration" type="processingType" minOccurs="0"
+				maxOccurs="unbounded"/>
+			<xs:element name="contentModification" type="processingType" minOccurs="0"
+				maxOccurs="unbounded"/>
+			<xs:element name="preOperation" type="processingType" minOccurs="0"
+				maxOccurs="unbounded"/>
+			<xs:element name="postOperation" type="processingType" minOccurs="0"
+				maxOccurs="unbounded"/>
+			<xs:element name="other" type="processingType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="processingStepType">
+		<xs:annotation>
+			<xs:documentation>A processing step.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="processingDateTime" type="dateTimeType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Date or DateTime the image was processed.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="processingAgency" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Identifies the organizationlevel producer(s) of the processed
+						image.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="processingStepDescription" type="xs:string" minOccurs="0"
+				maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>An ordinal listing of the image processing steps performed.
+						For example, "image despeckling."</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="processingStepSettings" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A description of any setting of the processing application.
+						For example, for a multi-engine OCR application this might include the
+						engines which were used. Ideally, this description should be adequate so
+						that someone else using the same application can produce identical
+						results.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="processingSoftware" type="processingSoftwareType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="processingSoftwareType">
+		<xs:annotation>
+			<xs:documentation>Information about a software application. Where applicable, the
+				preferred method for determining this information is by selecting Help --
+				About.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="softwareCreator" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The name of the organization or company that created the
+						application.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="softwareName" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The name of the application.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="softwareVersion" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The version of the application.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="applicationDescription" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A description of any important characteristics of the
+						application, especially for non-commercial applications. For example, if a
+						non-commercial application is built using commercial components, e.g., an
+						OCR engine SDK. Those components should be mentioned
+						here.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="dateTimeType">
+		<xs:union memberTypes="xs:date xs:dateTime xs:gYear xs:gYearMonth"/>
+	</xs:simpleType>
+	<xs:simpleType name="fontStylesType">
+		<xs:annotation>
+			<xs:documentation>List of any combination of font styles</xs:documentation>
+		</xs:annotation>
+		<xs:restriction>
+			<xs:simpleType>
+				<xs:list>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="bold"/>
+							<xs:enumeration value="italics"/>
+							<xs:enumeration value="subscript"/>
+							<xs:enumeration value="superscript"/>
+							<xs:enumeration value="smallcaps"/>
+							<xs:enumeration value="underline"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:list>
+			</xs:simpleType>
+			<xs:minLength value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="ComposedBlockType">
+		<xs:annotation>
+			<xs:documentation>A block that consists of other blocks</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="BlockType">
+				<xs:sequence minOccurs="0" maxOccurs="unbounded">
+					<xs:group ref="BlockGroup"/>
+				</xs:sequence>
+				<xs:attribute name="TYPE" type="xs:string" use="optional">
+					<xs:annotation>
+						<xs:documentation>A user defined string to identify the type of composed
+							block (e.g. table, advertisement, ...)</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+				<xs:attribute name="FILEID" type="xs:string" use="optional">
+					<xs:annotation>
+						<xs:documentation>An ID to link to an image which contains only the composed
+							block. The ID and the file link is defined in the related METS
+							file.</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="IllustrationType">
+		<xs:annotation>
+			<xs:documentation>A picture or image.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="BlockType">
+				<xs:attribute name="TYPE" type="xs:string" use="optional">
+					<xs:annotation>
+						<xs:documentation>A user defined string to identify the type of illustration
+							like photo, map, drawing, chart, ...</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+				<xs:attribute name="FILEID" type="xs:string" use="optional">
+					<xs:annotation>
+						<xs:documentation>A link to an image which contains only the
+							illustration.</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="GraphicalElementType">
+		<xs:annotation>
+			<xs:documentation>A graphic used to separate blocks. Usually a line or rectangle.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="BlockType"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TextBlockType">
+		<xs:annotation>
+			<xs:documentation>A block of text.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="BlockType">
+				<xs:sequence minOccurs="0">
+					<xs:element name="TextLine" maxOccurs="unbounded">
+						<xs:annotation>
+							<xs:documentation>A single line of text.</xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:sequence>
+								<xs:sequence>
+									<xs:element name="Shape" type="ShapeType" minOccurs="1"
+										maxOccurs="1">
+										<xs:annotation>
+											<xs:documentation>Mask</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+								</xs:sequence>
+								<xs:sequence maxOccurs="unbounded">
+									<xs:element name="String" type="StringType"/>
+									<xs:element name="SP" type="SPType" minOccurs="0"/>
+								</xs:sequence>
+								<xs:element name="HYP" minOccurs="0">
+									<xs:annotation>
+										<xs:documentation>A hyphenation char. Can appear only at the
+											end of a line.</xs:documentation>
+									</xs:annotation>
+									<xs:complexType>
+										<xs:attribute name="HEIGHT" type="xs:float" use="optional"/>
+										<xs:attribute name="WIDTH" type="xs:float" use="optional"/>
+										<xs:attribute name="HPOS" type="xs:float" use="optional"/>
+										<xs:attribute name="VPOS" type="xs:float" use="optional"/>
+										<xs:attribute name="CONTENT" type="xs:string" use="required"
+										/>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+							<xs:attribute name="ID" type="TextLineID"/>
+							<xs:attribute name="STYLEREFS" type="xs:IDREFS" use="optional"/>
+							<xs:attribute name="TAGREFS" type="xs:IDREF" use="required" />
+							<xs:attribute name="HEIGHT" type="xs:float" use="optional"/>
+							<xs:attribute name="WIDTH" type="xs:float" use="optional"/>
+							<xs:attribute name="HPOS" type="xs:float" use="optional"/>
+							<xs:attribute name="VPOS" type="xs:float" use="optional"/>
+							<xs:attribute name="BASELINE" type="xs:string" use="required">
+								<xs:annotation>
+									<xs:documentation>Baseline.</xs:documentation>
+								</xs:annotation>
+							</xs:attribute>
+							<xs:attribute name="LANG" type="xs:language" use="optional">
+								<xs:annotation>
+									<xs:documentation>Attribute to record language of the
+										textline.</xs:documentation>
+								</xs:annotation>
+							</xs:attribute>
+							<xs:attribute name="CS" type="xs:boolean" use="optional">
+								<xs:annotation>
+									<xs:documentation>Correction Status. Indicates whether manual
+										correction has been done or not. The correction status
+										should be recorded at the highest level possible (Block,
+										TextLine, String).</xs:documentation>
+								</xs:annotation>
+							</xs:attribute>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+				<xs:attribute name="language" type="xs:language" use="optional">
+					<xs:annotation>
+						<xs:documentation>Attribute deprecated. LANG should be used
+							instead.</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+				<xs:attribute name="LANG" type="xs:language" use="optional">
+					<xs:annotation>
+						<xs:documentation>Attribute to record language of the
+							textblock.</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TagType">
+		<xs:sequence>
+			<xs:element name="XmlData" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation xml:lang="en"> The xml data wrapper element XmlData is used to
+						contain XML encoded metadata. The content of an XmlData element can be in
+						any namespace or in no namespace. As permitted by the XML Schema Standard,
+						the processContents attribute value for the metadata in an XmlData is set to
+						“lax”. Therefore, if the source schema and its location are identified by
+						means of an XML schemaLocation attribute, then an XML processor will
+						validate the elements for which it can find declarations. If a source schema
+						is not identified, or cannot be found at the specified schemaLocation, then
+						an XML validator will check for well-formedness, but otherwise skip over the
+						elements appearing in the XmlData element. </xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:any namespace="##any" processContents="lax" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="ID" type="xs:ID" use="required"/>
+		<xs:attribute name="TYPE" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>Type can be used to classify and group the information within each
+					tag element type.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="LABEL" type="xs:string" use="required">
+			<xs:annotation>
+				<xs:documentation>Content / information value of the tag.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="DESCRIPTION" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>Description text for tag information for
+					clarification.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="URI" type="xs:anyURI" use="optional">
+			<xs:annotation>
+				<xs:documentation>Any URI for authority or description relevant
+					information.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="GlyphType" mixed="false">
+		<xs:annotation>
+			<xs:documentation> Modern OCR software stores information on glyph level. A glyph is
+				essentially a character or ligature. Accordingly the value for the glyph element
+				will be defined as follows: Pre-composed representation = base + combining
+				character(s) (decomposed representation) See
+				http://www.fileformat.info/info/unicode/char/0101/index.htm "U+0101" = (U+0061) +
+				(U+0304) "combining characters" ("base characters" in combination with non-spacing
+				marks or characters which are combined to one) are represented as one "glyph", e.g.
+				áàâ. Each glyph has its own coordinate information and must be separately
+				addressable as a distinct object. Correction and verification processes can be
+				carried out for individual characters. Post-OCR analysis of the text as well as
+				adaptive OCR algorithm must be able to record information on glyph level. In order
+				to reproduce the decision of the OCR software, optional characters must be recorded.
+				These are called variants. The OCR software evaluates each variant and picks the one
+				with the highest confidence score as the glyph. The confidence score expresses how
+				confident the OCR software is that a single glyph had been recognized correctly. The
+				glyph elements are in order of the word. Each glyph need to be recorded to built up
+				the whole word sequence. The glyph’s CONTENT attribute is no replacement for the
+				string’s CONTENT attribute. Due to post-processing steps such as correction the
+				values of both attributes may be inconsistent. </xs:documentation>
+		</xs:annotation>
+		<xs:sequence minOccurs="0">
+			<xs:element name="Shape" type="ShapeType" minOccurs="0"/>
+			<xs:element name="Variant" type="VariantType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="ID" type="xs:ID" use="optional"/>
+		<xs:attribute name="CONTENT" use="required">
+			<xs:annotation>
+				<xs:documentation> CONTENT contains the precomposed representation (combining
+					character) of the character from the parent String element. The sequence
+					position of the Gylph element matches the position of the character in the
+					String. </xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:length fixed="true" value="1"/>
+					<xs:whiteSpace value="preserve"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="GC" use="optional">
+			<xs:annotation>
+				<xs:documentation> This GC attribute records a float value between 0.0 and 1.0 that
+					expresses the level of confidence for the variant where is 1 is certain. This
+					attribute is optional. If it is not available, the default value for the variant
+					is “0”. The GC attribute semantic is the same as the WC attribute on the String
+					element and VC on Variant element. </xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:float">
+					<xs:minInclusive value="0"/>
+					<xs:maxInclusive value="1"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="HEIGHT" type="xs:float" use="optional"/>
+		<xs:attribute name="WIDTH" type="xs:float" use="optional"/>
+		<xs:attribute name="HPOS" type="xs:float" use="optional"/>
+		<xs:attribute name="VPOS" type="xs:float" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="VariantType" mixed="false">
+		<xs:annotation>
+			<xs:documentation> Alternative (combined) character for the glyph, outlined by OCR
+				engine or similar recognition processes. In case the variant are two (combining)
+				characters, two characters are outlined in one Variant element. E.g. a Glyph element
+				with CONTENT="m" can have a Variant element with the content "rn". Details for
+				different use-cases see on the samples on GitHub. </xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="CONTENT" use="optional">
+			<xs:annotation>
+				<xs:documentation> Each Variant represents an option for the glyph that the OCR
+					software detected as possible alternatives. In case the variant are two
+					(combining) characters, two characters are outlined in one Variant element. E.g.
+					a Glyph element with CONTENT="m" can have a Variant element with the content
+					"rn". Details for different use-cases see on the samples on GitHub.
+				</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="3"/>
+					<xs:whiteSpace value="preserve"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="VC" use="optional">
+			<xs:annotation>
+				<xs:documentation> This VC attribute records a float value between 0.0 and 1.0 that
+					expresses the level of confidence for the variant where is 1 is certain. This
+					attribute is optional. If it is not available, the default value for the variant
+					is “0”. The VC attribute semantic is the same as the GC attribute on the Glyph
+					element. </xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:float">
+					<xs:minInclusive value="0"/>
+					<xs:maxInclusive value="1"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+</xs:schema>
