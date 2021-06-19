@@ -30,12 +30,16 @@ def test(xsd, files, verbose: bool = False):
             errors.append(0)
         else:
             failed = True
-            click.echo(click.style(f"Testing {file_name}: Invalid", fg="red"))
+            click.echo(click.style(f"Testing {file_name}: Invalid", fg="red"), color=True)
             if verbose:
-                click.echo(click.style(
-                    str(validator.xmlschema.error_log).replace(f"{file_name}:", "").replace("{http://www.loc.gov/standards/alto/ns-v4#}", "alto:"),
-                    fg="yellow")
-                )
+                click.echo(
+                    click.style(
+                        str(validator.xmlschema.error_log)\
+                            .replace(f"{file_name}:", "")\
+                            .replace("{http://www.loc.gov/standards/alto/ns-v4#}", "alto:"),
+                        fg="yellow"
+                    ),
+                color=True)
             errors.append(1)
 
     click.echo("\n\n\n=====\nREPORT\n=====\n")
