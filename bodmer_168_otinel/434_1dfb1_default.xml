@@ -1400,23 +1400,6 @@
 
           
           
-          <TextLine ID="eSc_line_288fa90f"
-                    TAGREFS="LT211"
-                    BASELINE="2110 4679 3215 4660" 
-                    HPOS="2105"
-                    VPOS="4563"
-                    WIDTH="1105"
-                    HEIGHT="146">
-            <Shape><Polygon POINTS="2105 4677 2111 4574 2517 4595 2560 4568 2923 4590 3139 4563 3193 4585 3210 4655 3193 4693 2674 4677 2614 4704 2576 4682 2381 4677 2143 4682 2111 4709"/></Shape>
-	    <String CONTENT="i bon deneis haste de relev͛"
-                    HPOS="2105"
-                    VPOS="4563"
-                    WIDTH="1105"
-                    HEIGHT="146"></String>
-          </TextLine>
-
-          
-          
           <TextLine ID="eSc_line_4648cc0d"
                     TAGREFS="LT212"
                     BASELINE="1781 4708 2078 4712" 
@@ -1430,6 +1413,23 @@
                     VPOS="4579"
                     WIDTH="287"
                     HEIGHT="271"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_288fa90f"
+                    TAGREFS="LT211"
+                    BASELINE="2110 4679 3215 4660" 
+                    HPOS="2105"
+                    VPOS="4563"
+                    WIDTH="1105"
+                    HEIGHT="146">
+            <Shape><Polygon POINTS="2105 4677 2111 4574 2517 4595 2560 4568 2923 4590 3139 4563 3193 4585 3210 4655 3193 4693 2674 4677 2614 4704 2576 4682 2381 4677 2143 4682 2111 4709"/></Shape>
+	    <String CONTENT="i bon deneis haste de relev͛"
+                    HPOS="2105"
+                    VPOS="4563"
+                    WIDTH="1105"
+                    HEIGHT="146"></String>
           </TextLine>
 
           
@@ -1537,14 +1537,14 @@
           
           
           <TextLine ID="eSc_line_98f7eff7"
-                    
+                    TAGREFS="LT211"
                     BASELINE="1880 5554 3441 5517" 
                     HPOS="1878"
                     VPOS="5413"
                     WIDTH="1554"
                     HEIGHT="227">
             <Shape><Polygon POINTS="1878 5548 1878 5445 1981 5445 2035 5472 2132 5451 2371 5467 2398 5440 2565 5462 2592 5434 2652 5456 2690 5429 2890 5445 2934 5424 2966 5451 3199 5445 3242 5418 3318 5418 3356 5445 3432 5413 3432 5548 3323 5575 3296 5554 3172 5624 2814 5629 2712 5564 2441 5581 2376 5640 2289 5640 2241 5591 2219 5602 2165 5570 1883 5602"/></Shape>
-	    <String CONTENT=""
+                  <String CONTENT="F iert un paen sur sun healme cler"
                     HPOS="1878"
                     VPOS="5413"
                     WIDTH="1554"
@@ -1555,27 +1555,6 @@
         </TextBlock>
         
 
-        
-        <TextBlock ID="eSc_dummyblock_">
-          
-          
-          <TextLine ID="eSc_line_eacd8b02"
-                    
-                    BASELINE="3276 5863 3441 5855" 
-                    HPOS="3275"
-                    VPOS="5803"
-                    WIDTH="157"
-                    HEIGHT="59">
-            <Shape><Polygon POINTS="3275 5862 3275 5835 3312 5813 3432 5803 3432 5857 3285 5862"/></Shape>
-	    <String CONTENT=""
-                    HPOS="3275"
-                    VPOS="5803"
-                    WIDTH="157"
-                    HEIGHT="59"></String>
-          </TextLine>
-
-          
-        </TextBlock>
         
       </PrintSpace>
     </Page>
