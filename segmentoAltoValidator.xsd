@@ -201,8 +201,7 @@ For the full text see https://creativecommons.org/licenses/by-sa/4.0/legalcode. 
 		</xs:annotation>
 		<xs:sequence>
 			<xs:choice minOccurs="1" maxOccurs="unbounded">
-				<xs:element name="OtherTag" type="SegmentoTag">
-				</xs:element>
+				<xs:element name="OtherTag" type="SegmentoTag"> </xs:element>
 			</xs:choice>
 		</xs:sequence>
 	</xs:complexType>
@@ -222,7 +221,8 @@ For the full text see https://creativecommons.org/licenses/by-sa/4.0/legalcode. 
 	-->
 	<xs:complexType name="SegmentoTag">
 		<xs:annotation>
-			<xs:documentation>Gives the labels corresponding to Segemento ontology</xs:documentation>
+			<xs:documentation>Gives the labels corresponding to Segemento
+				ontology</xs:documentation>
 		</xs:annotation>
 		<xs:attribute name="LABEL" use="required">
 			<xs:simpleType>
@@ -499,7 +499,7 @@ For the full text see https://creativecommons.org/licenses/by-sa/4.0/legalcode. 
 		</xs:sequence>
 		<xs:attribute name="ID" type="BlockTypeID" use="required"/>
 		<xs:attribute name="STYLEREFS" type="xs:IDREFS"/>
-		<xs:attribute name="TAGREFS" type="xs:IDREFS" use="optional"/>
+		<xs:attribute name="TAGREFS" type="xs:IDREFS" use="required"/>
 		<xs:attribute name="HEIGHT" type="xs:float" use="optional"/>
 		<xs:attribute name="WIDTH" type="xs:float" use="optional"/>
 		<xs:attribute name="HPOS" type="xs:float" use="optional"/>
@@ -546,6 +546,7 @@ For the full text see https://creativecommons.org/licenses/by-sa/4.0/legalcode. 
 	</xs:simpleType>
 	<xs:simpleType name="CONTENTType">
 		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
 			<xs:whiteSpace value="preserve"/>
 		</xs:restriction>
 	</xs:simpleType>
@@ -1027,6 +1028,7 @@ For the full text see https://creativecommons.org/licenses/by-sa/4.0/legalcode. 
 								</xs:sequence>
 								<xs:sequence maxOccurs="unbounded">
 									<xs:element name="String" type="StringType"/>
+										
 									<xs:element name="SP" type="SPType" minOccurs="0"/>
 								</xs:sequence>
 								<xs:element name="HYP" minOccurs="0">
@@ -1039,14 +1041,20 @@ For the full text see https://creativecommons.org/licenses/by-sa/4.0/legalcode. 
 										<xs:attribute name="WIDTH" type="xs:float" use="optional"/>
 										<xs:attribute name="HPOS" type="xs:float" use="optional"/>
 										<xs:attribute name="VPOS" type="xs:float" use="optional"/>
-										<xs:attribute name="CONTENT" type="xs:string" use="required"
-										/>
+										<xs:attribute name="CONTENT" use="required">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+												<xs:length fixed="true" value="1"/>
+												<xs:whiteSpace value="preserve"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:attribute>
 									</xs:complexType>
 								</xs:element>
 							</xs:sequence>
 							<xs:attribute name="ID" type="TextLineID"/>
 							<xs:attribute name="STYLEREFS" type="xs:IDREFS" use="optional"/>
-							<xs:attribute name="TAGREFS" type="xs:IDREF" use="required" />
+							<xs:attribute name="TAGREFS" type="xs:IDREF" use="required"/>
 							<xs:attribute name="HEIGHT" type="xs:float" use="optional"/>
 							<xs:attribute name="WIDTH" type="xs:float" use="optional"/>
 							<xs:attribute name="HPOS" type="xs:float" use="optional"/>
