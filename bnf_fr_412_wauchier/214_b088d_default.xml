@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xmlns="http://www.loc.gov/standards/alto/ns-v4#"
-      xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# https://gitlab.inria.fr/scripta/escriptorium/-/raw/develop/app/escriptorium/static/alto-4-1-baselines.xsd">
+      xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
   <Description>
     <MeasurementUnit>pixel</MeasurementUnit>
     <sourceImageInformation>
       <fileName>214_b088d_default.jpg</fileName>
+      <fileIdentifier>https://gallica.bnf.fr/iiif/ark:/12148/btv1b84259980/f215/full/full/0/default.jpg</fileIdentifier>
     </sourceImageInformation>
   </Description>
   
   <Tags>
-    <OtherTag ID="BT1" LABEL="Title" DESCRIPTION="block type Title"/><OtherTag ID="BT2" LABEL="Main" DESCRIPTION="block type Main"/><OtherTag ID="BT3" LABEL="Commentary" DESCRIPTION="block type Commentary"/><OtherTag ID="BT591" LABEL="Default" DESCRIPTION="block type Default"/><OtherTag ID="BT593" LABEL="DropCapital" DESCRIPTION="block type DropCapital"/><OtherTag ID="BT594" LABEL="RunningTitle" DESCRIPTION="block type RunningTitle"/><OtherTag ID="BT595" LABEL="Margin" DESCRIPTION="block type Margin"/><OtherTag ID="BT596" LABEL="Numbering" DESCRIPTION="block type Numbering"/><OtherTag ID="BT597" LABEL="Decoration" DESCRIPTION="block type Decoration"/>
-    <OtherTag ID="LT1" LABEL="Main" DESCRIPTION="line type Main"/><OtherTag ID="LT2" LABEL="Numbering" DESCRIPTION="line type Numbering"/><OtherTag ID="LT3" LABEL="Correction" DESCRIPTION="line type Correction"/><OtherTag ID="LT208" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT209" LABEL="Default" DESCRIPTION="line type Default"/><OtherTag ID="LT210" LABEL="Rubric" DESCRIPTION="line type Rubric"/>
+    <OtherTag ID="BT1" LABEL="Title" DESCRIPTION="block type Title"/><OtherTag ID="BT2" LABEL="Main" DESCRIPTION="block type Main"/><OtherTag ID="BT591" LABEL="Default" DESCRIPTION="block type Default"/><OtherTag ID="BT593" LABEL="DropCapital" DESCRIPTION="block type DropCapital"/><OtherTag ID="BT594" LABEL="RunningTitle" DESCRIPTION="block type RunningTitle"/><OtherTag ID="BT595" LABEL="Margin" DESCRIPTION="block type Margin"/><OtherTag ID="BT596" LABEL="Numbering" DESCRIPTION="block type Numbering"/><OtherTag ID="BT597" LABEL="Decoration" DESCRIPTION="block type Decoration"/>
+    <OtherTag ID="LT1" LABEL="Main" DESCRIPTION="line type Main"/><OtherTag ID="LT2" LABEL="Numbering" DESCRIPTION="line type Numbering"/><OtherTag ID="LT208" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT209" LABEL="Default" DESCRIPTION="line type Default"/><OtherTag ID="LT210" LABEL="Rubric" DESCRIPTION="line type Rubric"/>
   </Tags>
   
   <Layout>
@@ -1373,7 +1374,7 @@
           
           
           <TextLine ID="eSc_line_75abd874"
-                    
+                    TAGREFS="LT208"
                     BASELINE="1659 3102 1892 3097" 
                     HPOS="1654"
                     VPOS="3009"
@@ -1683,17 +1684,17 @@
           
           <TextLine ID="eSc_line_fcdedbec"
                     TAGREFS="LT210"
-                    BASELINE="1115 3651 1424 3655" 
+                    BASELINE="1115 3651 1464 3655" 
                     HPOS="1113"
                     VPOS="3591"
-                    WIDTH="306"
-                    HEIGHT="89">
-            <Shape><Polygon POINTS="1113 3648 1137 3601 1217 3591 1372 3596 1410 3610 1419 3652 1405 3680 1118 3680"/></Shape>
-	    <String CONTENT=""
+                    WIDTH="348"
+                    HEIGHT="94">
+            <Shape><Polygon POINTS="1113 3648 1128 3615 1165 3619 1193 3591 1461 3615 1457 3685 1113 3676"/></Shape>
+	    <String CONTENT="de .s&#39;. martin"
                     HPOS="1113"
                     VPOS="3591"
-                    WIDTH="306"
-                    HEIGHT="89"></String>
+                    WIDTH="348"
+                    HEIGHT="94"></String>
           </TextLine>
 
           
@@ -1715,7 +1716,7 @@
           
           
           <TextLine ID="eSc_line_536efca2"
-                    
+                    TAGREFS="LT209"
                     BASELINE="1006 306 1694 302" 
                     HPOS="1005"
                     VPOS="169"
