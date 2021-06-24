@@ -104,7 +104,8 @@ For the full text see https://creativecommons.org/licenses/by-sa/4.0/legalcode. 
 <xs:schema xmlns="http://www.loc.gov/standards/alto/ns-v4#"
 	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink"
 	targetNamespace="http://www.loc.gov/standards/alto/ns-v4#" elementFormDefault="qualified"
-	attributeFormDefault="unqualified" version="4.0">
+	attributeFormDefault="unqualified" version="4.0"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1">
 	<xs:import namespace="http://www.w3.org/1999/xlink"
 		schemaLocation="http://www.loc.gov/standards/xlink/xlink.xsd"/>
 	<xs:element name="alto" type="altoType">
@@ -467,12 +468,22 @@ For the full text see https://creativecommons.org/licenses/by-sa/4.0/legalcode. 
 			<xs:documentation>Group of available block types</xs:documentation>
 		</xs:annotation>
 		<xs:choice>
-			<xs:element name="TextBlock" type="TextBlockType">
+			
+			<!--<xs:choice>-->
+			<xs:element name="TextBlock" type="BlockType">
 				<xs:annotation>
 					<xs:documentation>A block of text.</xs:documentation>
 				</xs:annotation>
 				
 			</xs:element>
+			<!--
+				<xs:element name="TextBlock" type="BlockTypeDummy">
+					<xs:annotation>
+						<xs:documentation>A block of text.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:choice> -->
+			
 			<xs:element name="Illustration" type="IllustrationType">
 				<xs:annotation>
 					<xs:documentation>A picture or image.</xs:documentation>
@@ -524,7 +535,25 @@ For the full text see https://creativecommons.org/licenses/by-sa/4.0/legalcode. 
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attributeGroup ref="xlink:simpleLink"/>
+		<!--
+		<xs:assert test="@HEIGHT and @TAGREFS">
+			<xs:annotation>
+				<xs:documentation>Attribut TAGREFS required in complex blocks, onlmy available with XSD 1.1</xs:documentation>
+			</xs:annotation>
+		</xs:assert>
+		-->
 	</xs:complexType>
+	<xs:complexType name="BlockTypeDummy">
+		<xs:annotation>
+			<xs:documentation>Base type for any kind of block on the page.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence minOccurs="0">
+			<xs:element name="Shape" type="ShapeType"/>
+		</xs:sequence>
+		<xs:attribute name="ID" type="BlockTypeID" use="required"/>
+		<xs:attribute name="STYLEREFS" type="xs:IDREFS"/>
+	</xs:complexType>
+	
 	<xs:complexType name="SPType">
 		<xs:annotation>
 			<xs:documentation>A white space.</xs:documentation>
