@@ -105,7 +105,7 @@ For the full text see https://creativecommons.org/licenses/by-sa/4.0/legalcode. 
 	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink"
 	targetNamespace="http://www.loc.gov/standards/alto/ns-v4#" elementFormDefault="qualified"
 	attributeFormDefault="unqualified" version="4.0"
-    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1">
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.0" vc:maxVersion="1.1">
 	<xs:import namespace="http://www.w3.org/1999/xlink"
 		schemaLocation="http://www.loc.gov/standards/xlink/xlink.xsd"/>
 	<xs:element name="alto" type="altoType">
@@ -574,12 +574,7 @@ For the full text see https://creativecommons.org/licenses/by-sa/4.0/legalcode. 
 			<xs:enumeration value="Abbreviation"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="CONTENTType">
-		<xs:restriction base="xs:string">
-			<xs:minLength value="1"/>
-			<xs:whiteSpace value="preserve"/>
-		</xs:restriction>
-	</xs:simpleType>
+	
 	<xs:simpleType name="WCType">
 		<xs:annotation>
 			<xs:documentation>Word Confidence: Confidence level of the ocr for this string. A value
@@ -629,7 +624,7 @@ For the full text see https://creativecommons.org/licenses/by-sa/4.0/legalcode. 
 		<xs:attribute name="WIDTH" type="xs:float" use="optional"/>
 		<xs:attribute name="HPOS" type="xs:float" use="optional"/>
 		<xs:attribute name="VPOS" type="xs:float" use="optional"/>
-		<xs:attribute name="CONTENT" type="CONTENTType" use="required"/>
+		<xs:attribute name="CONTENT" type="xs:string" use="required"/>
 		<xs:attribute name="STYLE" type="fontStylesType" use="optional"/>
 		<xs:attribute name="SUBS_TYPE" type="SUBS_TYPEType" use="optional"/>
 		<xs:attribute name="SUBS_CONTENT" type="xs:string" use="optional">
@@ -1035,20 +1030,7 @@ For the full text see https://creativecommons.org/licenses/by-sa/4.0/legalcode. 
 			<xs:extension base="BlockType"/>
 		</xs:complexContent>
 	</xs:complexType>
-	<xs:element name="TextBlock">
-		<!--  Rendre obligatoire tagRef sur TextBlock quand @ID ne contient pas dummyblock 
-		<xs:annotation>
-			<xs:documentation>@TAGREFS is required when @ID not contains "dummyblock" value</xs:documentation>
-			<xs:appinfo>
-				<sch:pattern xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-					<sch:rule context="TextBlock">
-						<sch:assert test="(@ID and @TAGREFS)">TAGREFS is required</sch:assert>
-					</sch:rule>
-				</sch:pattern>
-			</xs:appinfo>
-		</xs:annotation>
-		-->
-	</xs:element>
+	
 	<xs:complexType name="TextBlockType">
 		<xs:annotation>
 			<xs:documentation>A block of text.</xs:documentation>
@@ -1069,10 +1051,10 @@ For the full text see https://creativecommons.org/licenses/by-sa/4.0/legalcode. 
 											<xs:documentation>Mask</xs:documentation>
 										</xs:annotation>
 									</xs:element>
+									<xs:element name="string" type="StringType" minOccurs="1" maxOccurs="unbounded"/>
 								</xs:sequence>
 								<xs:sequence maxOccurs="unbounded">
 									<xs:element name="String" type="StringType"/>
-										
 									<xs:element name="SP" type="SPType" minOccurs="0"/>
 								</xs:sequence>
 								<xs:element name="HYP" minOccurs="0">
@@ -1085,22 +1067,12 @@ For the full text see https://creativecommons.org/licenses/by-sa/4.0/legalcode. 
 										<xs:attribute name="WIDTH" type="xs:float" use="optional"/>
 										<xs:attribute name="HPOS" type="xs:float" use="optional"/>
 										<xs:attribute name="VPOS" type="xs:float" use="optional"/>
-										<xs:attribute name="CONTENT" use="required">
-											<xs:simpleType>
-												<xs:restriction base="xs:string">
-												<xs:length fixed="true" value="1"/>
-												<xs:whiteSpace value="preserve"/>
-												</xs:restriction>
-											</xs:simpleType>
-										</xs:attribute>
 									</xs:complexType>
 								</xs:element>
 							</xs:sequence>
 							<xs:attribute name="ID" type="TextLineID"/>
 							<xs:attribute name="STYLEREFS" type="xs:IDREFS" use="optional"/>
 							<xs:attribute name="TAGREFS" type="xs:IDREF" use="optional"/>
-								
-							
 							<xs:attribute name="HEIGHT" type="xs:float" use="optional"/>
 							<xs:attribute name="WIDTH" type="xs:float" use="optional"/>
 							<xs:attribute name="HPOS" type="xs:float" use="optional"/>
