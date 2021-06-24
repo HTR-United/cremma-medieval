@@ -470,11 +470,10 @@ For the full text see https://creativecommons.org/licenses/by-sa/4.0/legalcode. 
 		<xs:choice>
 			
 			<!--<xs:choice>-->
-			<xs:element name="TextBlock" type="BlockType">
+			<xs:element name="TextBlock" type="TextBlockType">
 				<xs:annotation>
 					<xs:documentation>A block of text.</xs:documentation>
 				</xs:annotation>
-				
 			</xs:element>
 			<!--
 				<xs:element name="TextBlock" type="BlockTypeDummy">
@@ -574,7 +573,12 @@ For the full text see https://creativecommons.org/licenses/by-sa/4.0/legalcode. 
 			<xs:enumeration value="Abbreviation"/>
 		</xs:restriction>
 	</xs:simpleType>
-	
+	<xs:simpleType name="CONTENTType">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:whiteSpace value="preserve"/>
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:simpleType name="WCType">
 		<xs:annotation>
 			<xs:documentation>Word Confidence: Confidence level of the ocr for this string. A value
@@ -624,7 +628,7 @@ For the full text see https://creativecommons.org/licenses/by-sa/4.0/legalcode. 
 		<xs:attribute name="WIDTH" type="xs:float" use="optional"/>
 		<xs:attribute name="HPOS" type="xs:float" use="optional"/>
 		<xs:attribute name="VPOS" type="xs:float" use="optional"/>
-		<xs:attribute name="CONTENT" type="xs:string" use="required"/>
+		<xs:attribute name="CONTENT" type="CONTENTType" use="required"/>
 		<xs:attribute name="STYLE" type="fontStylesType" use="optional"/>
 		<xs:attribute name="SUBS_TYPE" type="SUBS_TYPEType" use="optional"/>
 		<xs:attribute name="SUBS_CONTENT" type="xs:string" use="optional">
@@ -1030,7 +1034,6 @@ For the full text see https://creativecommons.org/licenses/by-sa/4.0/legalcode. 
 			<xs:extension base="BlockType"/>
 		</xs:complexContent>
 	</xs:complexType>
-	
 	<xs:complexType name="TextBlockType">
 		<xs:annotation>
 			<xs:documentation>A block of text.</xs:documentation>
@@ -1051,10 +1054,10 @@ For the full text see https://creativecommons.org/licenses/by-sa/4.0/legalcode. 
 											<xs:documentation>Mask</xs:documentation>
 										</xs:annotation>
 									</xs:element>
-									<xs:element name="string" type="StringType" minOccurs="1" maxOccurs="unbounded"/>
 								</xs:sequence>
 								<xs:sequence maxOccurs="unbounded">
 									<xs:element name="String" type="StringType"/>
+										
 									<xs:element name="SP" type="SPType" minOccurs="0"/>
 								</xs:sequence>
 								<xs:element name="HYP" minOccurs="0">
@@ -1067,12 +1070,20 @@ For the full text see https://creativecommons.org/licenses/by-sa/4.0/legalcode. 
 										<xs:attribute name="WIDTH" type="xs:float" use="optional"/>
 										<xs:attribute name="HPOS" type="xs:float" use="optional"/>
 										<xs:attribute name="VPOS" type="xs:float" use="optional"/>
+										<xs:attribute name="CONTENT" use="required">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+												<xs:length fixed="true" value="1"/>
+												<xs:whiteSpace value="preserve"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:attribute>
 									</xs:complexType>
 								</xs:element>
 							</xs:sequence>
 							<xs:attribute name="ID" type="TextLineID"/>
 							<xs:attribute name="STYLEREFS" type="xs:IDREFS" use="optional"/>
-							<xs:attribute name="TAGREFS" type="xs:IDREF" use="optional"/>
+							<xs:attribute name="TAGREFS" type="xs:IDREF" use="required"/>
 							<xs:attribute name="HEIGHT" type="xs:float" use="optional"/>
 							<xs:attribute name="WIDTH" type="xs:float" use="optional"/>
 							<xs:attribute name="HPOS" type="xs:float" use="optional"/>
