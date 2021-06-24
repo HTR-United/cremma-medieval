@@ -471,6 +471,7 @@ For the full text see https://creativecommons.org/licenses/by-sa/4.0/legalcode. 
 				<xs:annotation>
 					<xs:documentation>A block of text.</xs:documentation>
 				</xs:annotation>
+				
 			</xs:element>
 			<xs:element name="Illustration" type="IllustrationType">
 				<xs:annotation>
@@ -499,7 +500,7 @@ For the full text see https://creativecommons.org/licenses/by-sa/4.0/legalcode. 
 		</xs:sequence>
 		<xs:attribute name="ID" type="BlockTypeID" use="required"/>
 		<xs:attribute name="STYLEREFS" type="xs:IDREFS"/>
-		<xs:attribute name="TAGREFS" type="xs:IDREFS" use="required"/>
+		<xs:attribute name="TAGREFS" type="xs:IDREFS" use="optional"/>
 		<xs:attribute name="HEIGHT" type="xs:float" use="optional"/>
 		<xs:attribute name="WIDTH" type="xs:float" use="optional"/>
 		<xs:attribute name="HPOS" type="xs:float" use="optional"/>
@@ -1005,6 +1006,20 @@ For the full text see https://creativecommons.org/licenses/by-sa/4.0/legalcode. 
 			<xs:extension base="BlockType"/>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:element name="TextBlock">
+		<!--  Rendre obligatoire tagRef sur TextBlock quand @ID ne contient pas dummyblock 
+		<xs:annotation>
+			<xs:documentation>@TAGREFS is required when @ID not contains "dummyblock" value</xs:documentation>
+			<xs:appinfo>
+				<sch:pattern xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+					<sch:rule context="TextBlock">
+						<sch:assert test="(@ID and @TAGREFS)">TAGREFS is required</sch:assert>
+					</sch:rule>
+				</sch:pattern>
+			</xs:appinfo>
+		</xs:annotation>
+		-->
+	</xs:element>
 	<xs:complexType name="TextBlockType">
 		<xs:annotation>
 			<xs:documentation>A block of text.</xs:documentation>
@@ -1054,7 +1069,9 @@ For the full text see https://creativecommons.org/licenses/by-sa/4.0/legalcode. 
 							</xs:sequence>
 							<xs:attribute name="ID" type="TextLineID"/>
 							<xs:attribute name="STYLEREFS" type="xs:IDREFS" use="optional"/>
-							<xs:attribute name="TAGREFS" type="xs:IDREF" use="required"/>
+							<xs:attribute name="TAGREFS" type="xs:IDREF" use="optional"/>
+								
+							
 							<xs:attribute name="HEIGHT" type="xs:float" use="optional"/>
 							<xs:attribute name="WIDTH" type="xs:float" use="optional"/>
 							<xs:attribute name="HPOS" type="xs:float" use="optional"/>

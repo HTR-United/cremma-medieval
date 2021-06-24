@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xmlns="http://www.loc.gov/standards/alto/ns-v4#"
-      xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# https://gitlab.inria.fr/scripta/escriptorium/-/raw/develop/app/escriptorium/static/alto-4-1-baselines.xsd">
+      xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
   <Description>
     <MeasurementUnit>pixel</MeasurementUnit>
     <sourceImageInformation>
       <fileName>132_da7e5_default.jpg</fileName>
+      <fileIdentifier>https://gallica.bnf.fr/iiif/ark:/12148/btv1b10527646p/f133/full/full/0/default.jpg</fileIdentifier>
     </sourceImageInformation>
   </Description>
   
@@ -292,7 +293,7 @@
                     WIDTH="117"
                     HEIGHT="109">
             <Shape><Polygon POINTS="1669 1958 1677 1867 1777 1876 1786 1958 1751 1976 1677 1963"/></Shape>
-	    <String CONTENT=""
+	    <String CONTENT="S"
                     HPOS="1669"
                     VPOS="1867"
                     WIDTH="117"
@@ -309,7 +310,7 @@
                     WIDTH="1274"
                     HEIGHT="134">
             <Shape><Polygon POINTS="1825 1932 1829 1858 1929 1854 1946 1837 1963 1854 2137 1837 2241 1858 2367 1854 2414 1832 2440 1854 2471 1832 2596 1832 2666 1854 2778 1832 2896 1850 2982 1828 3017 1850 3086 1850 3099 1919 3086 1949 3021 1936 2982 1954 2752 1941 2614 1958 2592 1941 2544 1958 2518 1941 2419 1941 2245 1962 2176 1945 1985 1962 1933 1945 1898 1962 1829 1945"/></Shape>
-	    <String CONTENT=""
+	    <String CONTENT="egnor prenez garde au fremis"
                     HPOS="1825"
                     VPOS="1828"
                     WIDTH="1274"
@@ -863,7 +864,7 @@
                     WIDTH="1279"
                     HEIGHT="138">
             <Shape><Polygon POINTS="377 1711 381 1620 528 1642 593 1616 628 1638 697 1616 728 1638 810 1633 828 1616 901 1633 927 1612 966 1625 1014 1607 1148 1629 1174 1612 1209 1629 1244 1612 1491 1620 1573 1599 1643 1620 1656 1685 1569 1720 1434 1724 1317 1702 1257 1724 1231 1707 1187 1724 1079 1702 962 1724 884 1707 802 1737 697 1711 602 1715 585 1737 524 1715 424 1737 381 1724"/></Shape>
-	    <String CONTENT=""
+	    <String CONTENT="D ont montent avant a lespi"
                     HPOS="377"
                     VPOS="1599"
                     WIDTH="1279"
@@ -897,7 +898,7 @@
                     WIDTH="1249"
                     HEIGHT="130">
             <Shape><Polygon POINTS="359 1954 364 1876 424 1863 585 1876 637 1850 680 1867 710 1850 806 1850 949 1867 1018 1845 1075 1858 1088 1841 1205 1841 1244 1863 1287 1841 1313 1863 1595 1854 1608 1932 1565 1954 1391 1936 1352 1958 1196 1941 1079 1962 958 1945 923 1962 823 1949 693 1967 611 1949 559 1971 455 1954 364 1967"/></Shape>
-	    <String CONTENT=""
+	    <String CONTENT="a lor recet torment arriere"
                     HPOS="359"
                     VPOS="1841"
                     WIDTH="1249"
@@ -1249,7 +1250,7 @@
         
 
         
-        <TextBlock ID="eSc_dummyblock_">
+              <TextBlock ID="eSc_dummyblock_" TAGREFS="BT584">
           
           
           <TextLine ID="eSc_line_00e67b35"
