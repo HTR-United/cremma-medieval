@@ -264,6 +264,8 @@ For the full text see https://creativecommons.org/licenses/by-sa/4.0/legalcode. 
 			<xs:enumeration value="Stamp"/>
 			<xs:enumeration value="Table"/>
 			<xs:enumeration value="Title"/>
+			<xs:enumeration value="Entry"/>
+			<xs:enumeration value="EntryEnd"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="QualityType">
