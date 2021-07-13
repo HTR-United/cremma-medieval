@@ -21,7 +21,7 @@ To ensure the quality of the data, continuous integration workflow (Github Actio
 We use releases to make available our HTR models, trained with Kraken, for medieval manuscripts :
 
 - 0.0.1 Arabica, accuracy 89,19% (21/06/21)
-- 0.0.2 Bicerin, accuracy 95,49% (21/07/13)
+- 1.0.0 Bicerin, accuracy 95,49% (21/07/13)
 
 *Table summarizing the corpus (state 21/07/13)*
 
