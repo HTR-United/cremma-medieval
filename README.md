@@ -1,4 +1,6 @@
+<img src="dim-map.png" width=150 align=right>
 # cremma-medieval
+
 
 *This project was funded by the DIM MAP in the context of the CREMMA project (https://www.dim-map.fr/projets-soutenus/cremma/)*
 
@@ -68,6 +70,9 @@ A. Pinche, Edition nativement numérique du recueil hagiographique "Li Seint Con
 fr/s150996.
 
 D. Stuzmann, Paléographie statistique pour décrire, identifier, dater. . . normaliser pour coopérer et aller plus loin ?, in: F. Fischer, C. Fritze, G. Vogeler (Eds.), Kodikologie und Paläographie im digitalen Zeitalter 2 - Codicology and Palaeography in the Digital Age 2, volume 3, Books on Demand (BoD), Norderstedt, 2011, pp. 247–277. URL: https://kups.ub.uni-koeln.de/4353/.
+
+
+
 
 
 
