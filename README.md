@@ -53,11 +53,6 @@ We use releases to make available our HTR models, trained with Kraken, for medie
 | -----                                                           | -----    |
 | All                                                             |  17431  |
 
-**A few more numbers about the corpus (coming from the HTR united report, see Github Actions)**
-
-- 481735 characters 
-- 18385 lines (all types together)
-- 1795 regions
 
 **Bibliography** 
 
