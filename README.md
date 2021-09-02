@@ -2,6 +2,13 @@
 
 # cremma-medieval
 
+![Region Badges](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/ArianePinche/ad63725341542c03ef7e8158cad3edb9/raw/regions.json)
+
+![Lines Badges](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/ArianePinche/ad63725341542c03ef7e8158cad3edb9/raw/lines.json)
+
+![Characters Badges](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/ArianePinche/ad63725341542c03ef7e8158cad3edb9/raw/chars.json)
+
+
 
 *This project was funded by the DIM MAP in the context of the CREMMA project (https://www.dim-map.fr/projets-soutenus/cremma/)*
 
@@ -46,11 +53,11 @@ We use releases to make available our HTR models, trained with Kraken, for medie
 | -----                                                           | -----    |
 | All                                                             |  17431  |
 
-*A few more numbers about the corpus (coming from the HTR united report, see Github Actions)**
+**A few more numbers about the corpus (coming from the HTR united report, see Github Actions)**
 
-* 481735 characters 
-* 18385 lines (all types together)
-* 1795 regions
+- 481735 characters 
+- 18385 lines (all types together)
+- 1795 regions
 
 **Bibliography** 
 
