@@ -1,5 +1,5 @@
 {
-    "version": "0.1",
+    "version": "1.0",
     "name": "CremmaLab",
     "author": "Ariane Pinche <ariane.pinche@chartes.psl.eu>",
     "characters": [
@@ -22,13 +22,15 @@
             "row": 0
         },
         {
-            "character": "◌̾",
+            "character": "\u033E",
+            "legend" : "tilde verticale",
             "keyboard_code": null,
             "column": 3,
             "row": 0
         },
         {
-            "character": "̃",
+            "character": "\u0303",
+            "legend" : "tilde horizontale",
             "keyboard_code": null,
             "column": 4,
             "row": 0
@@ -40,7 +42,8 @@
             "row": 0
         },
         {
-            "character": "◌̶",
+            "character": "\u0336",
+            "legend" : "barre horizontale",
             "keyboard_code": null,
             "column": 0,
             "row": 1
@@ -76,80 +79,93 @@
             "row": 1
         },
         {
-            "character": "ͣ",
+            "character": "\u0363",
             "keyboard_code": null,
+            "legend" : "a suscrit",
             "column": 0,
             "row": 2
         },
         {
-            "character": "ᵉ",
+            "character": "\u0364",
+            "legend" : "e suscrit",
             "keyboard_code": null,
             "column": 1,
             "row": 2
         },
         {
-            "character": "ͥ",
-            "keyboard_code": null,
+            "character": "\u0365",
+            "legend" : "i suscrit",
             "column": 2,
             "row": 2
         },
         {
-            "character": "ͦ",
+            "character": "\u0366",
+            "legend" : "o suscrit",
             "keyboard_code": null,
             "column": 3,
             "row": 2
         },
         {
-            "character": "ͧ ",
+            "character": "\u0367",
+            "legend" : "u suscrit",
             "keyboard_code": null,
             "column": 4,
             "row": 2
         },
         {
-            "character": "ͨ ",
+            "character": "\u0368",
+            "legend" : "c suscrit",
             "keyboard_code": null,
             "column": 5,
             "row": 2
         },
         {
-            "character": "ͫ ",
+            "character": "\u036B",
+            "legend" : "m suscrit",
             "keyboard_code": null,
             "column": 0,
             "row": 3
         },
         {
-            "character": "ᷠ",
+            "character": "\u1DE0",
+            "legend" : "n suscrit",
             "keyboard_code": null,
             "column": 1,
             "row": 3
         },
         {
-            "character": "ͬ ",
+            "character": "\u036C",
+            "legend" : "r suscrit",
             "keyboard_code": null,
             "column": 2,
             "row": 3
         },
         {
-            "character": "ᷤ ",
+            "character": "\u1DE4",
+            "legend" : "s suscrit",
             "keyboard_code": null,
             "column": 3,
+            "row": 3
+        },
+         {
+            "character": "\u036D",
+            "legend" : "t suscrit",
+            "keyboard_code": null,
+            "column": 4,
             "row": 3
         },
         
         {
-            "character": "ͯ",
+            "character": "\u036F",
+            "legend" : "x suscrit",
             "keyboard_code": null,
             "column": 5,
             "row": 3
         },
-        {
-            "character": "ͭ",
-            "keyboard_code": null,
-            "column": 4,
-            "row": 3
-        },
+       
           {
-            "character":"",
+            "character":"\uEFAA",
+            "legend" : "ligature ar",
             "keyboard_code": null,
             "column": 0,
             "row": 4
@@ -157,6 +173,7 @@
 
        {
             "character":"\u1DD1",
+            "legend" : "ligature ur",
             "keyboard_code": null,
             "column": 1,
             "row": 4
