@@ -54,6 +54,8 @@ We use releases to make available our HTR models, trained with Kraken, for medie
 | All                                                             |  17431  |
 
 
+If you want to transcribe texts according to our recommendations, you can load the *CremmaLab.json* keyboard in the Escriptorium interface. In order to ensure the correct display of the characters, in the FireFox browser, install Stylus plugin (https://addons.mozilla.org/fr/firefox/addon/styl-us/), then the customisation: MUFI for eScriptorium (https://userstyles.world/style/3915/mufi-for-escriptorium).
+
 **Bibliography** 
 
 J.-B. Camps, La Chanson d’Otinel : édition complète du corpus manuscrit
