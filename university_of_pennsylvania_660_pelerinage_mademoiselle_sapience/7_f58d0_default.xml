@@ -11,8 +11,8 @@
   </Description>
   
   <Tags>
-    <OtherTag ID="BT1" LABEL="Title" DESCRIPTION="block type Title"/><OtherTag ID="BT2" LABEL="Main" DESCRIPTION="block type Main"/><OtherTag ID="BT757" LABEL="DropCapital" DESCRIPTION="block type DropCapital"/><OtherTag ID="BT758" LABEL="Numbering" DESCRIPTION="block type Numbering"/><OtherTag ID="BT784" LABEL="Margin" DESCRIPTION="block type Margin"/>
-    <OtherTag ID="LT280" LABEL="Default" DESCRIPTION="line type Default"/><OtherTag ID="LT281" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT282" LABEL="Rubric" DESCRIPTION="line type Rubric"/><OtherTag ID="LT290" LABEL="Interlinear" DESCRIPTION="line type Interlinear"/>
+    <OtherTag ID="BT1" LABEL="Title" DESCRIPTION="block type Title"/><OtherTag ID="BT2" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT757" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/><OtherTag ID="BT758" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT784" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/>
+    <OtherTag ID="LT280" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT281" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT282" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/><OtherTag ID="LT290" LABEL="InterlinearLine" DESCRIPTION="line type InterlinearLine"/>
   </Tags>
   
   <Layout>
@@ -42,12 +42,6 @@
                    ID="eSc_textblock_94c3cba4"
                    TAGREFS="BT2">
           <Shape><Polygon POINTS="1218 619 1218 3409 3125 3409 3106 612"/></Shape>
-          
-        </TextBlock>
-        
-
-        
-        <TextBlock ID="eSc_dummyblock_">
           
           
           <TextLine ID="eSc_line_3c3f3869"

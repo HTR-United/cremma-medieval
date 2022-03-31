@@ -11,8 +11,8 @@
   </Description>
   
   <Tags>
-    <OtherTag ID="BT1" LABEL="Title" DESCRIPTION="block type Title"/><OtherTag ID="BT2" LABEL="Main" DESCRIPTION="block type Main"/><OtherTag ID="BT607" LABEL="Damage" DESCRIPTION="block type Damage"/><OtherTag ID="BT608" LABEL="Decoration" DESCRIPTION="block type Decoration"/><OtherTag ID="BT609" LABEL="DropCapitalLine" DESCRIPTION="block type DropCapitalLine"/><OtherTag ID="BT610" LABEL="Figure" DESCRIPTION="block type Figure"/><OtherTag ID="BT611" LABEL="Margin" DESCRIPTION="block type Margin"/><OtherTag ID="BT612" LABEL="MusicNotation" DESCRIPTION="block type MusicNotation"/><OtherTag ID="BT613" LABEL="Numbering" DESCRIPTION="block type Numbering"/><OtherTag ID="BT614" LABEL="RunningTitle" DESCRIPTION="block type RunningTitle"/><OtherTag ID="BT615" LABEL="Seal" DESCRIPTION="block type Seal"/><OtherTag ID="BT616" LABEL="Signatures" DESCRIPTION="block type Signatures"/><OtherTag ID="BT617" LABEL="Stamp" DESCRIPTION="block type Stamp"/><OtherTag ID="BT618" LABEL="Table" DESCRIPTION="block type Table"/><OtherTag ID="BT619" LABEL="Title" DESCRIPTION="block type Title"/><OtherTag ID="BT620" LABEL="DropCapital" DESCRIPTION="block type DropCapital"/>
-    <OtherTag ID="LT216" LABEL="Default" DESCRIPTION="line type Default"/><OtherTag ID="LT217" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT218" LABEL="Interlinear" DESCRIPTION="line type Interlinear"/><OtherTag ID="LT219" LABEL="MusicLine" DESCRIPTION="line type MusicLine"/><OtherTag ID="LT220" LABEL="Rubric" DESCRIPTION="line type Rubric"/>
+    <OtherTag ID="BT1" LABEL="Title" DESCRIPTION="block type Title"/><OtherTag ID="BT2" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT607" LABEL="DamageZone" DESCRIPTION="block type DamageZone"/><OtherTag ID="BT608" LABEL="GraphicZone" DESCRIPTION="block type GraphicZone"/><OtherTag ID="BT609" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/><OtherTag ID="BT610" LABEL="GraphicZone" DESCRIPTION="block type GraphicZone"/><OtherTag ID="BT611" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT612" LABEL="MusicZone" DESCRIPTION="block type MusicZone"/><OtherTag ID="BT613" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT614" LABEL="RunningTitleZone" DESCRIPTION="block type RunningTitleZone"/><OtherTag ID="BT615" LABEL="SealZone" DESCRIPTION="block type SealZone"/><OtherTag ID="BT616" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT617" LABEL="StampZone" DESCRIPTION="block type StampZone"/><OtherTag ID="BT618" LABEL="TableZone" DESCRIPTION="block type TableZone"/><OtherTag ID="BT619" LABEL="Title" DESCRIPTION="block type Title"/><OtherTag ID="BT620" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/>
+    <OtherTag ID="LT216" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT217" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT218" LABEL="InterlinearLine" DESCRIPTION="line type InterlinearLine"/><OtherTag ID="LT219" LABEL="MusicLine" DESCRIPTION="line type MusicLine"/><OtherTag ID="LT220" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/>
   </Tags>
   
   <Layout>
@@ -24,16 +24,7 @@
                   VPOS="0"
                   WIDTH="2509"
                   HEIGHT="3296">
-        
-        <TextBlock HPOS="147.0"
-                   VPOS="186.0"
-                   WIDTH="1636.0"
-                   HEIGHT="2766.0"
-                   ID="eSc_textblock_f3eefe7f"
-                   TAGREFS="BT2">
-          <Shape><Polygon POINTS="316 186 351 263 1368 252 1467 340 1533 568 1632 626 1610 689 1393 700 1324 758 1349 813 1533 856 1511 1117 1673 1164 1654 1249 1500 1274 1522 1337 1783 1395 1761 1469 1610 1505 1665 1538 1665 1634 1522 1669 1555 1886 1500 1999 1511 2128 1456 2175 1522 2546 1393 2579 1346 2636 1360 2680 1489 2724 1478 2787 1379 2823 1379 2952 219 2952 197 2919 186 1999 147 1930 158 1799 176 1722 197 1700 252 1678 208 1557 197 1164 208 604 241 590 274 186"/></Shape>
-          
-        </TextBlock>
+   
         
         <TextBlock HPOS="1698.0"
                    VPOS="197.0"
@@ -74,8 +65,16 @@
         
 
         
-        <TextBlock ID="eSc_dummyblock_">
-          
+        
+              <TextBlock HPOS="147.0"
+                      VPOS="186.0"
+                      WIDTH="1636.0"
+                      HEIGHT="2766.0"
+                      ID="eSc_textblock_f3eefe7f"
+                      TAGREFS="BT2">
+                      <Shape><Polygon POINTS="316 186 351 263 1368 252 1467 340 1533 568 1632 626 1610 689 1393 700 1324 758 1349 813 1533 856 1511 1117 1673 1164 1654 1249 1500 1274 1522 1337 1783 1395 1761 1469 1610 1505 1665 1538 1665 1634 1522 1669 1555 1886 1500 1999 1511 2128 1456 2175 1522 2546 1393 2579 1346 2636 1360 2680 1489 2724 1478 2787 1379 2823 1379 2952 219 2952 197 2919 186 1999 147 1930 158 1799 176 1722 197 1700 252 1678 208 1557 197 1164 208 604 241 590 274 186"/></Shape>
+                      
+     
           
           <TextLine ID="eSc_line_29fca774"
                     TAGREFS="LT216"

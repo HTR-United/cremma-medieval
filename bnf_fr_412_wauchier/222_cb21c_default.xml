@@ -11,8 +11,8 @@
   </Description>
   
   <Tags>
-    <OtherTag ID="BT1" LABEL="Title" DESCRIPTION="block type Title"/><OtherTag ID="BT2" LABEL="Main" DESCRIPTION="block type Main"/><OtherTag ID="BT591" LABEL="Default" DESCRIPTION="block type Default"/><OtherTag ID="BT593" LABEL="DropCapital" DESCRIPTION="block type DropCapital"/><OtherTag ID="BT594" LABEL="RunningTitle" DESCRIPTION="block type RunningTitle"/><OtherTag ID="BT595" LABEL="Margin" DESCRIPTION="block type Margin"/><OtherTag ID="BT596" LABEL="Numbering" DESCRIPTION="block type Numbering"/><OtherTag ID="BT597" LABEL="Decoration" DESCRIPTION="block type Decoration"/>
-    <OtherTag ID="LT1" LABEL="Main" DESCRIPTION="line type Main"/><OtherTag ID="LT2" LABEL="Numbering" DESCRIPTION="line type Numbering"/><OtherTag ID="LT208" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT209" LABEL="Default" DESCRIPTION="line type Default"/><OtherTag ID="LT210" LABEL="Rubric" DESCRIPTION="line type Rubric"/>
+    <OtherTag ID="BT1" LABEL="Title" DESCRIPTION="block type Title"/><OtherTag ID="BT2" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT591" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT593" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/><OtherTag ID="BT594" LABEL="RunningTitleZone" DESCRIPTION="block type RunningTitleZone"/><OtherTag ID="BT595" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT596" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT597" LABEL="GraphicZone" DESCRIPTION="block type GraphicZone"/>
+    <OtherTag ID="LT1" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT2" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT208" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT209" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT210" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/>
   </Tags>
   
   <Layout>
@@ -1683,7 +1683,20 @@
                     WIDTH="1093"
                     HEIGHT="151"></String>
           </TextLine>
-
+                <TextLine ID="eSc_line_de540808"
+                        TAGREFS="LT209" 
+                        BASELINE="964 364 1734 354" 
+                        HPOS="960"
+                        VPOS="217"
+                        WIDTH="772"
+                        HEIGHT="218">
+                        <Shape><Polygon POINTS="960 359 965 246 1031 227 1249 241 1268 222 1339 241 1410 217 1717 241 1732 350 1722 378 1646 364 1590 402 1528 369 1467 411 1424 373 1344 406 1296 369 1206 369 1140 435 970 435"/></Shape>
+                        <String CONTENT="seil aide. Dont uindrent.ii.angeles deuāt"
+                                HPOS="960"
+                                VPOS="217"
+                                WIDTH="772"
+                                HEIGHT="218"></String>
+                </TextLine>
           
         </TextBlock>
         
@@ -1728,27 +1741,7 @@
         </TextBlock>
         
 
-        
-        <TextBlock ID="eSc_dummyblock_">
-          
-          
-          <TextLine ID="eSc_line_de540808"
-                  TAGREFS="LT209" 
-                    BASELINE="964 364 1734 354" 
-                    HPOS="960"
-                    VPOS="217"
-                    WIDTH="772"
-                    HEIGHT="218">
-            <Shape><Polygon POINTS="960 359 965 246 1031 227 1249 241 1268 222 1339 241 1410 217 1717 241 1732 350 1722 378 1646 364 1590 402 1528 369 1467 411 1424 373 1344 406 1296 369 1206 369 1140 435 970 435"/></Shape>
-	    <String CONTENT="seil aide. Dont uindrent.ii.angeles deuāt"
-                    HPOS="960"
-                    VPOS="217"
-                    WIDTH="772"
-                    HEIGHT="218"></String>
-          </TextLine>
-
-          
-        </TextBlock>
+  
         
       </PrintSpace>
     </Page>

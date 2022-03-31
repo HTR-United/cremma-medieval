@@ -11,8 +11,8 @@
   </Description>
   
   <Tags>
-    <OtherTag ID="BT1" LABEL="Title" DESCRIPTION="block type Title"/><OtherTag ID="BT2" LABEL="Main" DESCRIPTION="block type Main"/><OtherTag ID="BT598" LABEL="Damage" DESCRIPTION="block type Damage"/><OtherTag ID="BT599" LABEL="Decoration" DESCRIPTION="block type Decoration"/><OtherTag ID="BT600" LABEL="DropCapitalLine" DESCRIPTION="block type DropCapitalLine"/><OtherTag ID="BT601" LABEL="Margin" DESCRIPTION="block type Margin"/><OtherTag ID="BT602" LABEL="Numbering" DESCRIPTION="block type Numbering"/><OtherTag ID="BT603" LABEL="RunningTitle" DESCRIPTION="block type RunningTitle"/><OtherTag ID="BT604" LABEL="Stamp" DESCRIPTION="block type Stamp"/><OtherTag ID="BT605" LABEL="Table" DESCRIPTION="block type Table"/><OtherTag ID="BT606" LABEL="DropCapital" DESCRIPTION="block type DropCapital"/>
-    <OtherTag ID="LT211" LABEL="Default" DESCRIPTION="line type Default"/><OtherTag ID="LT212" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT213" LABEL="Interlinear" DESCRIPTION="line type Interlinear"/><OtherTag ID="LT214" LABEL="MusicLine" DESCRIPTION="line type MusicLine"/><OtherTag ID="LT215" LABEL="Rubric" DESCRIPTION="line type Rubric"/>
+    <OtherTag ID="BT1" LABEL="Title" DESCRIPTION="block type Title"/><OtherTag ID="BT2" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT598" LABEL="DamageZone" DESCRIPTION="block type DamageZone"/><OtherTag ID="BT599" LABEL="GraphicZone" DESCRIPTION="block type GraphicZone"/><OtherTag ID="BT600" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/><OtherTag ID="BT601" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT602" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT603" LABEL="RunningTitleZone" DESCRIPTION="block type RunningTitleZone"/><OtherTag ID="BT604" LABEL="StampZone" DESCRIPTION="block type StampZone"/><OtherTag ID="BT605" LABEL="TableZone" DESCRIPTION="block type TableZone"/><OtherTag ID="BT606" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/>
+    <OtherTag ID="LT211" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT212" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT213" LABEL="InterlinearLine" DESCRIPTION="line type InterlinearLine"/><OtherTag ID="LT214" LABEL="MusicLine" DESCRIPTION="line type MusicLine"/><OtherTag ID="LT215" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/>
   </Tags>
   
   <Layout>
@@ -1591,28 +1591,6 @@
           
         </TextBlock>
         
-
-        
-        <TextBlock ID="eSc_dummyblock_">
-          
-          
-          <TextLine ID="eSc_line_3c013771"
-                    TAGREFS="LT211"
-                    BASELINE="2814 5575 4211 5564" 
-                    HPOS="2809"
-                    VPOS="5467"
-                    WIDTH="1397"
-                    HEIGHT="195">
-            <Shape><Polygon POINTS="2809 5570 2814 5472 2939 5494 3101 5472 3210 5499 3291 5472 3415 5478 3437 5499 3648 5467 3713 5489 3746 5472 3767 5494 3903 5467 3940 5494 4092 5472 4114 5494 4184 5483 4206 5559 4189 5635 4162 5640 4060 5613 3913 5651 3865 5619 3827 5640 3713 5613 3686 5640 3605 5651 3556 5624 3502 5662 3318 5662 3155 5619 2966 5619 2944 5640 2912 5624 2874 5662 2814 5662"/></Shape>
-	    <String CONTENT="L e fız pepı́n a ordane sa gent"
-                    HPOS="2809"
-                    VPOS="5467"
-                    WIDTH="1397"
-                    HEIGHT="195"></String>
-          </TextLine>
-
-          
-        </TextBlock>
         
       </PrintSpace>
     </Page>

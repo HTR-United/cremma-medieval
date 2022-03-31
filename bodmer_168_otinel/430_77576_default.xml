@@ -11,8 +11,8 @@
   </Description>
   
   <Tags>
-    <OtherTag ID="BT1" LABEL="Title" DESCRIPTION="block type Title"/><OtherTag ID="BT2" LABEL="Main" DESCRIPTION="block type Main"/><OtherTag ID="BT598" LABEL="Damage" DESCRIPTION="block type Damage"/><OtherTag ID="BT599" LABEL="Decoration" DESCRIPTION="block type Decoration"/><OtherTag ID="BT600" LABEL="DropCapitalLine" DESCRIPTION="block type DropCapitalLine"/><OtherTag ID="BT601" LABEL="Margin" DESCRIPTION="block type Margin"/><OtherTag ID="BT602" LABEL="Numbering" DESCRIPTION="block type Numbering"/><OtherTag ID="BT603" LABEL="RunningTitle" DESCRIPTION="block type RunningTitle"/><OtherTag ID="BT604" LABEL="Stamp" DESCRIPTION="block type Stamp"/><OtherTag ID="BT605" LABEL="Table" DESCRIPTION="block type Table"/><OtherTag ID="BT606" LABEL="DropCapital" DESCRIPTION="block type DropCapital"/>
-    <OtherTag ID="LT211" LABEL="Default" DESCRIPTION="line type Default"/><OtherTag ID="LT212" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT213" LABEL="Interlinear" DESCRIPTION="line type Interlinear"/><OtherTag ID="LT214" LABEL="MusicLine" DESCRIPTION="line type MusicLine"/><OtherTag ID="LT215" LABEL="Rubric" DESCRIPTION="line type Rubric"/>
+    <OtherTag ID="BT1" LABEL="Title" DESCRIPTION="block type Title"/><OtherTag ID="BT2" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT598" LABEL="DamageZone" DESCRIPTION="block type DamageZone"/><OtherTag ID="BT599" LABEL="GraphicZone" DESCRIPTION="block type GraphicZone"/><OtherTag ID="BT600" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/><OtherTag ID="BT601" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT602" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT603" LABEL="RunningTitleZone" DESCRIPTION="block type RunningTitleZone"/><OtherTag ID="BT604" LABEL="StampZone" DESCRIPTION="block type StampZone"/><OtherTag ID="BT605" LABEL="TableZone" DESCRIPTION="block type TableZone"/><OtherTag ID="BT606" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/>
+    <OtherTag ID="LT211" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT212" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT213" LABEL="InterlinearLine" DESCRIPTION="line type InterlinearLine"/><OtherTag ID="LT214" LABEL="MusicLine" DESCRIPTION="line type MusicLine"/><OtherTag ID="LT215" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/>
   </Tags>
   
   <Layout>
@@ -32,6 +32,21 @@
                    ID="eSc_textblock_6e531029"
                    TAGREFS="BT602">
           <Shape><Polygon POINTS="3978 324 3978 406 3810 406 3810 303"/></Shape>
+                <TextLine ID="eSc_line_d701957d"
+                        TAGREFS="LT211"
+                        BASELINE="3827 406 4064 406" 
+                        HPOS="3821"
+                        VPOS="200"
+                        WIDTH="233"
+                        HEIGHT="287">
+                        <Shape><Polygon POINTS="3821 406 3821 232 3908 238 4054 200 4054 460 4011 449 3940 487 3875 487 3821 449"/></Shape>
+                        <String CONTENT="214"
+                                HPOS="3821"
+                                VPOS="200"
+                                WIDTH="233"
+                                HEIGHT="287"></String>
+                </TextLine>
+                
           
         </TextBlock>
         
@@ -1533,33 +1548,11 @@
                     WIDTH="1478"
                     HEIGHT="211"></String>
           </TextLine>
-
           
         </TextBlock>
-        
-
-        
-        <TextBlock ID="eSc_dummyblock_">
           
           
-          <TextLine ID="eSc_line_d701957d"
-                    TAGREFS="LT211"
-                    BASELINE="3827 406 4064 406" 
-                    HPOS="3821"
-                    VPOS="200"
-                    WIDTH="233"
-                    HEIGHT="287">
-            <Shape><Polygon POINTS="3821 406 3821 232 3908 238 4054 200 4054 460 4011 449 3940 487 3875 487 3821 449"/></Shape>
-	    <String CONTENT="214"
-                    HPOS="3821"
-                    VPOS="200"
-                    WIDTH="233"
-                    HEIGHT="287"></String>
-          </TextLine>
-
-          
-        </TextBlock>
-        
+ 
       </PrintSpace>
     </Page>
   </Layout>

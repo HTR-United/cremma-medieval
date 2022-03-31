@@ -10,8 +10,8 @@
   </Description>
   
   <Tags>
-    <OtherTag ID="BT577" LABEL="Damage" DESCRIPTION="block type Damage"/><OtherTag ID="BT578" LABEL="Decoration" DESCRIPTION="block type Decoration"/><OtherTag ID="BT579" LABEL="DropCapital" DESCRIPTION="block type DropCapital"/><OtherTag ID="BT580" LABEL="Figure" DESCRIPTION="block type Figure"/><OtherTag ID="BT581" LABEL="Main" DESCRIPTION="block type Main"/><OtherTag ID="BT582" LABEL="Margin" DESCRIPTION="block type Margin"/><OtherTag ID="BT583" LABEL="MusicNotation" DESCRIPTION="block type MusicNotation"/><OtherTag ID="BT584" LABEL="Numbering" DESCRIPTION="block type Numbering"/><OtherTag ID="BT585" LABEL="RunningTitle" DESCRIPTION="block type RunningTitle"/><OtherTag ID="BT586" LABEL="Seal" DESCRIPTION="block type Seal"/><OtherTag ID="BT587" LABEL="Signatures" DESCRIPTION="block type Signatures"/><OtherTag ID="BT588" LABEL="Stamp" DESCRIPTION="block type Stamp"/><OtherTag ID="BT589" LABEL="Table" DESCRIPTION="block type Table"/><OtherTag ID="BT590" LABEL="Title" DESCRIPTION="block type Title"/>
-    <OtherTag ID="LT203" LABEL="Default" DESCRIPTION="line type Default"/><OtherTag ID="LT204" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT205" LABEL="Interlinear" DESCRIPTION="line type Interlinear"/><OtherTag ID="LT206" LABEL="MusicLine" DESCRIPTION="line type MusicLine"/><OtherTag ID="LT207" LABEL="Rubric" DESCRIPTION="line type Rubric"/>
+    <OtherTag ID="BT577" LABEL="DamageZone" DESCRIPTION="block type DamageZone"/><OtherTag ID="BT578" LABEL="GraphicZone" DESCRIPTION="block type GraphicZone"/><OtherTag ID="BT579" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/><OtherTag ID="BT580" LABEL="GraphicZone" DESCRIPTION="block type GraphicZone"/><OtherTag ID="BT581" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT582" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT583" LABEL="MusicZone" DESCRIPTION="block type MusicZone"/><OtherTag ID="BT584" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT585" LABEL="RunningTitleZone" DESCRIPTION="block type RunningTitleZone"/><OtherTag ID="BT586" LABEL="SealZone" DESCRIPTION="block type SealZone"/><OtherTag ID="BT587" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT588" LABEL="StampZone" DESCRIPTION="block type StampZone"/><OtherTag ID="BT589" LABEL="TableZone" DESCRIPTION="block type TableZone"/><OtherTag ID="BT590" LABEL="Title" DESCRIPTION="block type Title"/>
+    <OtherTag ID="LT203" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT204" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT205" LABEL="InterlinearLine" DESCRIPTION="line type InterlinearLine"/><OtherTag ID="LT206" LABEL="MusicLine" DESCRIPTION="line type MusicLine"/><OtherTag ID="LT207" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/>
   </Tags>
   
   <Layout>
@@ -1207,31 +1207,24 @@
                     HEIGHT="113"></String>
           </TextLine>
 
-          
+                <TextLine ID="eSc_line_3a9e96a2"
+                        TAGREFS="LT203"
+                        BASELINE="1813 4384 3022 4375" 
+                        HPOS="1813"
+                        VPOS="4300"
+                        WIDTH="1209"
+                        HEIGHT="144">
+                        <Shape><Polygon POINTS="1813 4384 1815 4314 1827 4306 1850 4306 1876 4332 2006 4332 2041 4317 2142 4332 2173 4306 2217 4303 2246 4317 2303 4303 2321 4320 2364 4303 2422 4303 2480 4329 2549 4329 2566 4311 2609 4303 2659 4326 2728 4326 2762 4300 2812 4300 2835 4323 2869 4326 2898 4311 2947 4317 2970 4300 2993 4317 3014 4311 3022 4375 3008 4424 2985 4415 2959 4430 2927 4412 2843 4415 2812 4433 2745 4412 2621 4412 2583 4441 2511 4424 2474 4441 2439 4421 2367 4415 2332 4441 2122 4444 2070 4418 2038 4418 2006 4444 1957 4444 1945 4433 1865 4435 1818 4418"/></Shape>
+                        <String CONTENT="D ont porra braire ⁊ rechener"
+                                HPOS="1813"
+                                VPOS="4300"
+                                WIDTH="1209"
+                                HEIGHT="144"></String>
+                </TextLine>
         </TextBlock>
         
 
-        
-        <TextBlock ID="eSc_dummyblock_">
-          
-          
-          <TextLine ID="eSc_line_3a9e96a2"
-                    TAGREFS="LT203"
-                    BASELINE="1813 4384 3022 4375" 
-                    HPOS="1813"
-                    VPOS="4300"
-                    WIDTH="1209"
-                    HEIGHT="144">
-            <Shape><Polygon POINTS="1813 4384 1815 4314 1827 4306 1850 4306 1876 4332 2006 4332 2041 4317 2142 4332 2173 4306 2217 4303 2246 4317 2303 4303 2321 4320 2364 4303 2422 4303 2480 4329 2549 4329 2566 4311 2609 4303 2659 4326 2728 4326 2762 4300 2812 4300 2835 4323 2869 4326 2898 4311 2947 4317 2970 4300 2993 4317 3014 4311 3022 4375 3008 4424 2985 4415 2959 4430 2927 4412 2843 4415 2812 4433 2745 4412 2621 4412 2583 4441 2511 4424 2474 4441 2439 4421 2367 4415 2332 4441 2122 4444 2070 4418 2038 4418 2006 4444 1957 4444 1945 4433 1865 4435 1818 4418"/></Shape>
-	    <String CONTENT="D ont porra braire ⁊ rechener"
-                    HPOS="1813"
-                    VPOS="4300"
-                    WIDTH="1209"
-                    HEIGHT="144"></String>
-          </TextLine>
-
-          
-        </TextBlock>
+      
         
       </PrintSpace>
     </Page>
