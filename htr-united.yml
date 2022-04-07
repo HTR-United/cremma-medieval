@@ -1,24 +1,32 @@
 schema: https://htr-united.github.io/schema/2021-10-15/schema.json
-title : 'Cremma Medieval'
-url: 'https://github.com/HTR-United/cremma-medieval'
-description: >
-    The cremma-medieval repository was created in order to make available transcription
-    corpora for training HTR models for medieval manuscripts from the 12th to the 14th century.
-language: 
-    - 'fro'
-script: 
-    - 'Latn'
-script-type: "only-manuscript"
-time: 
-    notBefore: "1200"
-    notAfter: "1400"
-hands: 
-    count: "1-per-folder"
-    precision: "estimated"
+title: Cremma Medieval
+url: https://github.com/HTR-United/cremma-medieval
+description: 'The cremma-medieval repository was created in order to make available
+  transcription corpora for training HTR models for medieval manuscripts from the
+  12th to the 14th century.
+
+  '
+language:
+- fro
+script:
+- Latn
+script-type: only-manuscript
+time:
+  notBefore: '1200'
+  notAfter: '1400'
+hands:
+  count: 1-per-folder
+  precision: estimated
 license:
-    - {name: 'CC-BY 4.0', url: 'https://creativecommons.org/licenses/by/4.0/'}
-format: 'Alto-XML'
+- name: CC-BY 4.0
+  url: https://creativecommons.org/licenses/by/4.0/
+format: Alto-XML
 volume:
-    - {count: 18385, metric: "lines"}
-    - {count: 1795, metric: "regions"}
-    - {count: 481735, metric: "characters"}
+- metric: characters
+  count: 481667
+- metric: files
+  count: 221
+- metric: lines
+  count: 18381
+- metric: regions
+  count: 1682
