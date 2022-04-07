@@ -2,11 +2,7 @@
 
 # cremma-medieval
 
-![Region Badges](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/ArianePinche/ad63725341542c03ef7e8158cad3edb9/raw/regions.json)
-
-![Lines Badges](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/ArianePinche/ad63725341542c03ef7e8158cad3edb9/raw/lines.json)
-
-![Characters Badges](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/ArianePinche/ad63725341542c03ef7e8158cad3edb9/raw/chars.json)
+![characters badge](badges/characters.svg) ![regions badge](badges/regions.svg) ![lines badge](badges/lines.svg) ![files badge](badges/files.svg) 
 
 
 
