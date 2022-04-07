@@ -71,7 +71,7 @@ jobs:
           pip install chocomufin
       - name: Run ChocoMufin
         run: |
-          chocomufin control table.csv ./*/*.xml
+          chocomufin --norm NFD control table.csv ./*/*.xml
   HTRVX:
     runs-on: ubuntu-latest
     steps:
