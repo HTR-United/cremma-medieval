@@ -2649,7 +2649,20 @@
                    ID="eSc_textblock_50db06a2"
                    TAGREFS="BT736">
           <Shape><Polygon POINTS="5493 436 5493 690 6031 690 6031 436"/></Shape>
-          
+                <TextLine ID="eSc_line_d40a4ce4"
+                        TAGREFS="LT274"
+                        BASELINE="5646 591 5965 580" 
+                        HPOS="5641"
+                        VPOS="436"
+                        WIDTH="319"
+                        HEIGHT="232">
+                        <Shape><Polygon POINTS="5646 591 5641 436 5718 436 5780 498 5826 478 5888 508 5960 498 5960 622 5832 622 5765 663 5652 668"/></Shape>
+                        <String CONTENT="Lambert"
+                                HPOS="5641"
+                                VPOS="436"
+                                WIDTH="319"
+                                HEIGHT="232"></String>
+                </TextLine>
         </TextBlock>
         
         <TextBlock HPOS="7608"
@@ -2659,48 +2672,23 @@
                    ID="eSc_textblock_37c603bf"
                    TAGREFS="BT739">
           <Shape><Polygon POINTS="7608 465 7608 690 8029 690 8029 465"/></Shape>
-          
+                <TextLine ID="eSc_line_be099b80"
+                        TAGREFS="LT274"
+                        BASELINE="7719 601 7966 601" 
+                        HPOS="7719"
+                        VPOS="498"
+                        WIDTH="242"
+                        HEIGHT="134">
+                        <Shape><Polygon POINTS="7719 601 7719 524 7961 498 7961 632 7719 632"/></Shape>
+                        <String CONTENT="Cxxvi"
+                                HPOS="7719"
+                                VPOS="498"
+                                WIDTH="242"
+                                HEIGHT="134"></String>
+                </TextLine>
+                
         </TextBlock>
         
-
-        
-        <TextBlock ID="eSc_dummyblock_">
-          
-          
-          <TextLine ID="eSc_line_d40a4ce4"
-                    TAGREFS="LT274"
-                    BASELINE="5646 591 5965 580" 
-                    HPOS="5641"
-                    VPOS="436"
-                    WIDTH="319"
-                    HEIGHT="232">
-            <Shape><Polygon POINTS="5646 591 5641 436 5718 436 5780 498 5826 478 5888 508 5960 498 5960 622 5832 622 5765 663 5652 668"/></Shape>
-	    <String CONTENT="Lambert"
-                    HPOS="5641"
-                    VPOS="436"
-                    WIDTH="319"
-                    HEIGHT="232"></String>
-          </TextLine>
-
-          
-          
-          <TextLine ID="eSc_line_be099b80"
-                    TAGREFS="LT274"
-                    BASELINE="7719 601 7966 601" 
-                    HPOS="7719"
-                    VPOS="498"
-                    WIDTH="242"
-                    HEIGHT="134">
-            <Shape><Polygon POINTS="7719 601 7719 524 7961 498 7961 632 7719 632"/></Shape>
-	    <String CONTENT="Cxxvi"
-                    HPOS="7719"
-                    VPOS="498"
-                    WIDTH="242"
-                    HEIGHT="134"></String>
-          </TextLine>
-
-          
-        </TextBlock>
         
       </PrintSpace>
     </Page>
