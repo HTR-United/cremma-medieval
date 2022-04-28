@@ -36,18 +36,27 @@
             "row": 0
         },
         {
-            "character": "÷",
+            "character": "\u0336",
+            "legend" : "barre horizontale",
             "keyboard_code": null,
             "column": 5,
             "row": 0
         },
-        {
-            "character": "\u0336",
-            "legend" : "barre horizontale",
+
+            {
+            "character": "÷",
+            "keyboard_code": null,
+            "column": 6,
+            "row": 0
+        },
+
+            {
+            "character": "đ",
             "keyboard_code": null,
             "column": 0,
             "row": 1
         },
+       
         {
             "character": "ħ",
             "keyboard_code": null,
@@ -72,10 +81,16 @@
             "column": 4,
             "row": 1
         },
+         {
+            "character": "ꝙ",
+            "keyboard_code": null,
+            "column": 5,
+            "row": 1
+        },
         {
             "character": "ẜ",
             "keyboard_code": null,
-            "column": 5,
+            "column": 6,
             "row": 1
         },
         {
@@ -123,35 +138,35 @@
             "character": "\u036B",
             "legend" : "m suscrit",
             "keyboard_code": null,
-            "column": 0,
-            "row": 3
+            "column": 6,
+            "row": 2
         },
         {
             "character": "\u1DE0",
             "legend" : "n suscrit",
             "keyboard_code": null,
-            "column": 1,
+            "column": 0,
             "row": 3
         },
         {
             "character": "\u036C",
             "legend" : "r suscrit",
             "keyboard_code": null,
-            "column": 2,
+            "column": 1,
             "row": 3
         },
         {
             "character": "\u1DE4",
             "legend" : "s suscrit",
             "keyboard_code": null,
-            "column": 3,
+            "column": 2,
             "row": 3
         },
          {
             "character": "\u036D",
             "legend" : "t suscrit",
             "keyboard_code": null,
-            "column": 4,
+            "column": 3,
             "row": 3
         },
         
@@ -159,7 +174,7 @@
             "character": "\u036F",
             "legend" : "x suscrit",
             "keyboard_code": null,
-            "column": 5,
+            "column": 4,
             "row": 3
         },
        
@@ -167,35 +182,45 @@
             "character":"\uEFAA",
             "legend" : "ligature ar",
             "keyboard_code": null,
-            "column": 0,
-            "row": 4
+            "column": 5,
+            "row": 3
         },
 
        {
             "character":"\u1DD1",
             "legend" : "ligature ur",
             "keyboard_code": null,
+            "column": 6,
+            "row": 3
+        },
+     
+        {
+            "character":"‸",
+            "keyboard_code": null,
+            "column": 0,
+            "row": 4
+        },
+
+        {
+            "character":"⁜",
+            "keyboard_code": null,
             "column": 1,
             "row": 4
         },
-        
-       
-
         {
-            "character":"‸",
+            "character": "¶",
             "keyboard_code": null,
             "column": 2,
             "row": 4
         },
-
         {
-            "character":"⁋",
+            "character": "⟦",
             "keyboard_code": null,
             "column": 3,
             "row": 4
         },
         {
-            "character":"\u002D",
+            "character": "⟧",
             "keyboard_code": null,
             "column": 4,
             "row": 4
