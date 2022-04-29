@@ -18,7 +18,7 @@ The CREMMA Medieval dataset has been built with eScriptorium (http://traces6.par
 *  Bibliothèqe nationale de France, fr. 844, *Manuscrit du Roi*, Maritem project(https://anr.fr/Projet-ANR-18-CE27-0016) transcribed by V. Mariotti
 *  Bibliothèqe nationale de France, fr. 13496, *Vie de saint Jérôme* transcribed by A. Pinche
 *  Bibliothèqe nationale de France, fr. 17229, *Vie de saint Jérôme* transcribed by A. Pinche
-*  Bibliothèqe nationale de France, fr.22550, *Les Sept Sages de Thèbes*, this project just started in Geneva under the direction of Y. Foehr-Janssen, the different have been transcribed by Camille Carnaille (fol.157r, 163v, 174v, 178v, 186v, 200v), Prunelle Deleville (fol. 157v, 178r, 186r, 200r, 204r, 343v), Sophie Leclamb (fol. 174v), Aminoel Meylan (169r), Simone Ventura (fol. 163r). 
+*  Bibliothèqe nationale de France, fr.22550, *Les Sept Sages de Thèbes*, this project just started in Geneva under the direction of Y. Foehr-Janssen (UNIGE), the different have been transcribed by Camille Carnaille (ULB/UNIGE) (fol.157r, 163v, 174v, 178v, 186v, 200v), Prunelle Deleville (UNIGE) (fol. 157v, 178r, 186r, 200r, 204r, 343v), Sophie Lecomte (ULB) (fol. 174v), Aminoel Meylan (UNIGE) (169r), Simone Ventura (ULB) (fol. 163r). 
 * Cologny, Bodmer, 168 and Vatican, Reg. Lat., 1616, *Chanson d'Otinel* transcribed by J. -B. Camps from the Geste project (https://github.com/Jean-Baptiste-Camps/Geste)
 
 
