@@ -52,7 +52,7 @@ We use releases to make available our HTR models, trained with Kraken, for medie
 | vaticane_reg_lat_1616_otinel                                    |   1726  |
 | bnf_fr_25516                                                    | 998 |
 | -----                                                           | -----    |
-| All                                                             |  18429  |
+| All                                                             |  21657  |
 
 
 If you want to transcribe texts according to our recommendations, you can load the *CremmaLab.json* keyboard in the Escriptorium interface. In order to ensure the correct display of the characters, in the FireFox browser, install Stylus plugin (https://addons.mozilla.org/fr/firefox/addon/styl-us/), then the customisation: MUFI for eScriptorium (https://userstyles.world/style/3915/mufi-for-escriptorium).
