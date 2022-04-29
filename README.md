@@ -48,7 +48,7 @@ We use releases to make available our HTR models, trained with Kraken, for medie
 | bnf_fr_844_manuscrit_du_roi                                     |  1026  |
 | bodmer_168_otinel                                               |  1927  |
 | university_of_pennsylvania_660_pelerinage_mademoiselle_sapience | 317 |
-| uni_of_pennsylvania_ms_codex_909_Eneide                         || 
+| uni_of_pennsylvania_ms_codex_909_Eneide                         | 2511 | 
 | vaticane_reg_lat_1616_otinel                                    |   1726  |
 | bnf_fr_25516                                                    | 998 |
 | -----                                                           | -----    |
