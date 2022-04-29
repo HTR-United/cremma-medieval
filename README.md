@@ -18,7 +18,7 @@ The CREMMA Medieval dataset has been built with eScriptorium (http://traces6.par
 *  Bibliothèqe nationale de France, fr. 844, *Manuscrit du Roi*, Maritem project(https://anr.fr/Projet-ANR-18-CE27-0016) transcribed by V. Mariotti
 *  Bibliothèqe nationale de France, fr. 13496, *Vie de saint Jérôme* transcribed by A. Pinche
 *  Bibliothèqe nationale de France, fr. 17229, *Vie de saint Jérôme* transcribed by A. Pinche
-*  Bibliothèqe nationale de France, fr. 25513, *Beuve de Hantone* transcribed By A. Nolibois (Université d'Aix-Marseille)
+*  Bibliothèqe nationale de France, fr. 25516, *Beuve de Hantone* transcribed By A. Nolibois (Université d'Aix-Marseille)
 *  Bibliothèqe nationale de France, fr.22550, *Les Sept Sages de Thèbes*, this project just started in Geneva under the direction of Y. Foehr-Janssen (UNIGE), the different have been transcribed by Camille Carnaille (ULB/UNIGE) (fol.157r, 163v, 174v, 178v, 186v, 200v), Prunelle Deleville (UNIGE) (fol. 157v, 178r, 186r, 200r, 204r, 343v), Sophie Lecomte (ULB) (fol. 174v), Aminoel Meylan (UNIGE) (169r), Simone Ventura (ULB) (fol. 163r). 
 * Cologny, Bodmer, 168 and Vatican, Reg. Lat., 1616, *Chanson d'Otinel* transcribed by J. -B. Camps from the Geste project (https://github.com/Jean-Baptiste-Camps/Geste)
 
@@ -47,8 +47,9 @@ We use releases to make available our HTR models, trained with Kraken, for medie
 | bodmer_168_otinel                                               |  1927  |
 | university_of_pennsylvania_660_pelerinage_mademoiselle_sapience | 317 |
 | vaticane_reg_lat_1616_otinel                                    |   1726  |
+| bnf_fr_25516                                                    | 998 |
 | -----                                                           | -----    |
-| All                                                             |  17431  |
+| All                                                             |  18429  |
 
 
 If you want to transcribe texts according to our recommendations, you can load the *CremmaLab.json* keyboard in the Escriptorium interface. In order to ensure the correct display of the characters, in the FireFox browser, install Stylus plugin (https://addons.mozilla.org/fr/firefox/addon/styl-us/), then the customisation: MUFI for eScriptorium (https://userstyles.world/style/3915/mufi-for-escriptorium).
