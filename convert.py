@@ -2,7 +2,7 @@ import re
 import glob
 import sys
 
-
+#Mise en place de la nouvelle terminologie segmOnto dans les labels 
 Zone = {
     "Main": "MainZone",
     "Default": "MainZone",
@@ -19,7 +19,7 @@ Zone = {
     "Seal" : "SealZone",
     "Stamp" : "StampZone",
     "Table" : "TableZone",
-    "Title" : "Title",
+    "Title" : "TitlePageZone",
     'DropCapitalLine' : "DropCapitalZone",
 }
 Line = {
