@@ -35,7 +35,9 @@ jobs:
           pip install htr-united-metadata-generator htruc anybadge
       - name: Run Report
         run: |
-          humGenerator --parse alto --group ./*/*.xml --github-envs --to-json updated_metrics.json
+          # Generate chocomufin version
+          chocomufin -n NFD convert table.csv ./*/*.xml --parser alto
+          humGenerator --parse alto --group ./*/*.mufichecker.xml --github-envs --to-json updated_metrics.json --chars -n NFD
           cat envs.txt >> $GITHUB_ENV
       - name: Get HTR United Badge Template
         if: github.ref == 'refs/heads/main'
@@ -45,7 +47,7 @@ jobs:
       - name: Automatically update the Catalog & the Badges
         if: github.ref == 'refs/heads/main'
         run: |-
-          htruc update-volumes htr-united.yml updated_metrics.json --inplace
+          htruc update-volumes htr-united.yml updated_metrics.json --inplace 
           # Generate badges
           mkdir -p badges
           anybadge --value=${{ env.HTRUNITED_CHARS }} --file=badges/characters.svg --label=Characters --color=#007ec6 --overwrite --template=${{ steps.get.outputs.file }}
