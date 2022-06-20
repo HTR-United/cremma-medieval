@@ -33,7 +33,7 @@ We use releases to make available our HTR models, trained with Kraken, for medie
 
 - 0.0.1 Arabica, accuracy 89,19% (21/06/21)
 - 1.0.0 Bicerin, accuracy 95,49% (21/07/13)
-- 1.0.1 Bicerin, accuracy 95,30% (20/06/22)
+- 1.1.0 Bicerin, accuracy 95,30% (20/06/22)
 
 *Table summarizing the corpus (state 21/07/13)*
 
