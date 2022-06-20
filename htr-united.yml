@@ -2,61 +2,60 @@ schema: https://htr-united.github.io/schema/2022-04-15/schema.json
 title: cremma-medieval
 url: https://github.com/HTR-United/cremma-medieval
 authors:
-  - name: Pinche
-    surname: Ariane
-    orcid: 0000-0002-7843-5050
-    roles:
-      - transcriber
-      - aligner
-      - project-manager
-      - quality-control
-      - support
-  - name: Camps
-    surname: Jean-Baptiste
-    roles:
-      - transcriber
-  - name: Mariotti
-    surname: Viola
-    roles:
-      - transcriber
-  - name: Nolibois
-    surname: Alice
-    roles:
-      - transcriber
-  - name: Carnaille
-    surname: Camille
-    roles:
-      - transcriber
-  - name: Deleville
-    surname: Prunelle
-    roles:
-      - transcriber
-  - name: Lecomte
-    surname: Sophie
-    roles:
-      - transcriber
-  - name: Meylan
-    surname: Aminoel
-    roles:
-      - transcriber
-  - name: Ventura
-    surname: Simone
-    roles:
-      - transcriber
-  - name: Dugaz
-    surname: Lucien
-    roles:
-      - transcriber
-description: >-
-  Transcription corpora for training HTR models for medieval manuscripts from
-  the 12th to the 15th century.
+- name: Pinche
+  surname: Ariane
+  orcid: 0000-0002-7843-5050
+  roles:
+  - transcriber
+  - aligner
+  - project-manager
+  - quality-control
+  - support
+- name: Camps
+  surname: Jean-Baptiste
+  roles:
+  - transcriber
+- name: Mariotti
+  surname: Viola
+  roles:
+  - transcriber
+- name: Nolibois
+  surname: Alice
+  roles:
+  - transcriber
+- name: Carnaille
+  surname: Camille
+  roles:
+  - transcriber
+- name: Deleville
+  surname: Prunelle
+  roles:
+  - transcriber
+- name: Lecomte
+  surname: Sophie
+  roles:
+  - transcriber
+- name: Meylan
+  surname: Aminoel
+  roles:
+  - transcriber
+- name: Ventura
+  surname: Simone
+  roles:
+  - transcriber
+- name: Dugaz
+  surname: Lucien
+  roles:
+  - transcriber
+description: Transcription corpora for training HTR models for medieval manuscripts
+  from the 12th to the 15th century.
 project-name: CremmaLab
 project-website: https://cremmalab.hypotheses.org
 language:
-  - fra
-  - fro
+- fra
+- fro
 script:
-  - iso: Latn
+- iso: Latn
 script-type: only-manuscript
 time:
   notBefore: '1100'
@@ -65,30 +64,129 @@ hands:
   count: 1-per-folder
   precision: exact
 license:
-  - name: CC-BY 4.0
-    url: https://creativecommons.org/licenses/by/4.0/
+- name: CC-BY 4.0
+  url: https://creativecommons.org/licenses/by/4.0/
 format: Alto-XML
 citation-file-link: https://github.com/HTR-United/cremma-medieval/blob/main/citation.cff
-transcription-guidelines: >-
-  As the data come from different projects, transcriptions have been
-  standardized to strengthen HTR models. We chose a graphemic transcription
-  method, following D. Stutzmann definitions (see bibliography), to have a sign
-  in the image corresponding to a sign in our text: all the abbreviations are
-  kept, and u/v or i/j are not distinguished. The spaces in the dataset are not
-  homogeneously represented, sometimes transcriptions reproduce the manuscript
-  spacing while others use lexical spaces. It must be stressed that spaces are
-  the most important source of error in medieval HTR models. Most of the
-  transcription follow the layout segmentation of the SegmOnto ontology
-  (https://github.com/SegmOnto/examples), separating the main column, margin,
-  numbering, drop capital, etc. All the recommendations are described in
-    the following document  : Ariane Pinche, Guide de transcription pour les manuscrits du Xe au XVe siècle, 2022, ⟨hal-03697382>, en ligne : <https://hal.archives-ouvertes.fr/hal-03697382>.
+transcription-guidelines: "As the data come from different projects, transcriptions\
+  \ have been standardized to strengthen HTR models. We chose a graphemic transcription\
+  \ method, following D. Stutzmann definitions (see bibliography), to have a sign\
+  \ in the image corresponding to a sign in our text: all the abbreviations are kept,\
+  \ and u/v or i/j are not distinguished. The spaces in the dataset are not homogeneously\
+  \ represented, sometimes transcriptions reproduce the manuscript spacing while others\
+  \ use lexical spaces. It must be stressed that spaces are the most important source\
+  \ of error in medieval HTR models. Most of the transcription follow the layout segmentation\
+  \ of the SegmOnto ontology (https://github.com/SegmOnto/examples), separating the\
+  \ main column, margin, numbering, drop capital, etc. All the recommendations are\
+  \ described in\n  the following document  : Ariane Pinche, Guide de transcription\
+  \ pour les manuscrits du Xe au XVe si\xE8cle, 2022, \u27E8hal-03697382>, en ligne\
+  \ : <https://hal.archives-ouvertes.fr/hal-03697382>."
 production-software: eScriptorium + Kraken
 volume:
 - metric: characters
-  count: 575812
+  count: 579368
 - metric: files
   count: 263
 - metric: lines
   count: 21656
 - metric: regions
   count: 1830
+characters:
+  mode: NFD
+  members:
+  - e
+  - i
+  - s
+  - t
+  - n
+  - a
+  - r
+  - o
+  - l
+  - u
+  - c
+  - d
+  - m
+  - p
+  - .
+  - q
+  - f
+  - g
+  - "\u0303"
+  - z
+  - b
+  - h
+  - "\u204A"
+  - v
+  - y
+  - ':'
+  - E
+  - Q
+  - x
+  - L
+  - "\u033E"
+  - S
+  - D
+  - "\uA751"
+  - "\u0365"
+  - "\uA76F"
+  - C
+  - "\u0363"
+  - A
+  - ''''
+  - M
+  - "\uA770"
+  - j
+  - "\u0301"
+  - T
+  - P
+  - O
+  - k
+  - I
+  - N
+  - '9'
+  - "\u036C"
+  - J
+  - U
+  - G
+  - R
+  - F
+  - "\u1DD1"
+  - "\uF038"
+  - "\u0364"
+  - '&'
+  - '1'
+  - B
+  - V
+  - "\uA753"
+  - "\xF7"
+  - "\u0366"
+  - H
+  - "\u1DE4"
+  - '7'
+  - '2'
+  - "\u039B"
+  - '6'
+  - '8'
+  - '0'
+  - '3'
+  - '4'
+  - "\u033D"
+  - w
+  - '-'
+  - '5'
+  - "\u036D"
+  - Y
+  - "\_"
+  - "\u0142"
+  - "\u0308"
+  - "\xB6"
+  - X
+  - "\u0368"
+  - "\u0127"
+  - K
+  - "\u03B4"
+  - "\u036B"
+  - /
+  - "\u0167"
+  - ','
