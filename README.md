@@ -8,7 +8,7 @@
 
 *This project was funded by the DIM MAP in the context of the CREMMA project (https://www.dim-map.fr/projets-soutenus/cremma/)*
 
-The cremma-medieval repository was created in order to make available transcription corpora for training HTR models for medieval manuscripts from the 12th to the 14th century.
+The cremma-medieval repository was created in order to make available transcription corpora for training HTR models for medieval manuscripts from the 12th to the 15th century.
 
 The CREMMA Medieval dataset has been built with eScriptorium (http://traces6.paris.inria.fr), an interface for HTR ground truth production, and, an HTR and layout segmentation engine. It is composed of ten Old French manuscripts written between the 13th and 14th centuries, mainly scanned in high definition and color except for one manuscript (Vatican) which is a black and white document and BnF fr. 17229, 13496 and 411 that come from microfilm scans. The datasets is mostly made from pre-existing transcribed texts and the samples size can be very different from one source manuscript to the other. The basis of the dataset is composed of the following transcriptions : 
 
