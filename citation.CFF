@@ -1,0 +1,30 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Cremma Medieval
+message: >-
+  If you use this dataset, please cite it using the
+  metadata from this file.
+type: dataset
+authors:
+  - given-names: Ariane
+    email: ariane.pinche@gmail.com
+    family-names: Pinche
+    affiliation: CJM
+    orcid: 'https://orcid.org/0000-0002-7843-5050'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.5235185
+repository-code: 'https://github.com/HTR-United/cremma-medieval'
+url: 'https://github.com/HTR-United/cremma-medieval'
+abstract: >-
+  Transcription corpora for training HTR models for
+  medieval manuscripts from the 12th to the 15th
+  century.
+keywords:
+  - HTR
+  - Medieval manuscript
+license: CC-BY-4.0
+version: Bicerin 1.1.0
+date-released: '2022-06-21'
