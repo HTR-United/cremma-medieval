@@ -38,7 +38,7 @@ We use releases to make available our HTR models, trained with Kraken, for medie
 *Table summarizing the corpus (state 22/07/01)*
 
  Manuscript                            | Date | Transcribed Lines |
-|:---------------------------------------|:------|:-------------------|
+|:---------------------------------------|:------|-------------------:|
 | BnF, ms fr. 412                       | 13th | 6324              |
 | BnF, Arsenal 3516                     | 13th | 1991              |
 | Cologny, bodmer, 168                  | 13th | 1976              |
