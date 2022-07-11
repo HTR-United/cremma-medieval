@@ -27,7 +27,7 @@ The CREMMA Medieval dataset has been built with eScriptorium (http://traces6.par
 
 As the data come from different projects, transcriptions have been standardized to strengthen HTR models. We chose a graphemic transcription method, following D. Stutzmann definitions (see bibliography), to have a sign in the image corresponding to a sign in our text: all the abbreviations are kept, and u/v or i/j are not distinguished. The spaces in the dataset are not homogeneously represented, sometimes transcriptions reproduce the manuscript spacing while others use lexical spaces. It must be stressed that spaces are the most important source of error in medieval HTR models. Most of the transcription follow the layout segmentation of the SegmOnto ontology (https://github.com/SegmOnto/examples), separating the main column, margin, numbering, drop capital, etc. 
 
-To ensure the quality of the data, continuous integration workflow (Github Actions) has been put in place checking the segmentation vocabulary : SegmentoKraken, XML schema validator (segmentoAltoValidator.xsd), but also the homogeneity of the signs of the characters used in the dataset through a list of authorized signs and translation table (table.csv) with ChocoMufin.
+To ensure the quality of the data, continuous integration workflow (Github Actions) has been put in place checking the segmentation vocabulary (Segmento): XML schema validator (segmentoAltoValidator.xsd), but also the homogeneity of the signs of the characters used in the dataset through a list of authorized signs and translation table (table.csv) with ChocoMufin.
 
 We use releases to make available our HTR models, trained with Kraken, for medieval manuscripts :
 
