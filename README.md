@@ -35,25 +35,25 @@ We use releases to make available our HTR models, trained with Kraken, for medie
 - 1.0.0 Bicerin, accuracy 95,49% (21/07/13)
 - 1.1.0 Bicerin, accuracy 95,30% (20/06/22)
 
-*Table summarizing the corpus (state 21/07/13)*
+*Table summarizing the corpus (state 22/07/01)*
 
-| Directory | transcribed Lines  |
-|:----------------------------------------------------------------|:----------------|
-| BnF_17229_saintLambert_microfilm                                |   161     |
-| BnF_fr_13496_saintJerome_microfilm                              |  159     |
-| BnF_fr_411_saintLambert_microfilm                               | 153   |
-| bnf__arsenal3516_imagedumonde                                   | 2007 |
-| bnf_fr_22549_sept_sages                                         | 2612|
-| bnf_fr_24428_bestiaire                                          | 1295 |
-| bnf_fr_412_wauchier                                             |  6148 |
-| bnf_fr_844_manuscrit_du_roi                                     |  1026  |
-| bodmer_168_otinel                                               |  1927  |
-| university_of_pennsylvania_660_pelerinage_mademoiselle_sapience | 317 |
-| uni_of_pennsylvania_ms_codex_909_Eneide                         | 2511 | 
-| vaticane_reg_lat_1616_otinel                                    |   1726  |
-| bnf_fr_25516                                                    | 998 |
-| -----                                                           | -----    |
-| All                                                             |  21657  |
+ Manuscript                            | Date | Transcribed Lines |
+|:---------------------------------------|:------|:-------------------|
+| BnF, ms fr. 412                       | 13th | 6324              |
+| BnF, Arsenal 3516                     | 13th | 1991              |
+| Cologny, bodmer, 168                  | 13th | 1976              |
+| BnF, ms fr. 24428                     | 13th | 1328              |
+| BnF, ms fr. 25516                     | 13th | 717               |
+| BnF, ms fr. 844                       | 13th | 224               |
+| BnF, ms fr. 17229                     | 13th | 164               |
+| BnF, ms fr. 13496                     | 13th | 161               |
+| BnF, Arsenal 3516                     | 13th | 105               |
+| BnF, ms fr. 22549                     | 14th | 2682              |
+| Vaticane, Reg. Lat., 1616             | 14th | 1772              |
+| University of pennsylvania, codex 660 | 14th | 368               |
+| BnF, ms fr. 411                       | 14th | 179               |
+| University of pennsylvania, codex 909 | 15th | 2513              |
+| All                                   |      | 21656             |
 
 
 If you want to transcribe texts according to our recommendations, you can load the *CremmaLab.json* keyboard in the Escriptorium interface. In order to ensure the correct display of the characters, in the FireFox browser, install Stylus plugin (https://addons.mozilla.org/fr/firefox/addon/styl-us/), then the customisation: MUFI for eScriptorium (https://userstyles.world/style/3915/mufi-for-escriptorium).
