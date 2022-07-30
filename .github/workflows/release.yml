@@ -1,0 +1,29 @@
+name: Upload chocomufin data
+on:
+  release:
+    types: [published]
+jobs:
+  zip-files:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install chocomufin
+      - name: Run Report
+        run: |
+          # Generate chocomufin version
+          chocomufin -n NFD convert table.csv ./*/*.xml --parser alto
+      - name: Compress
+        run: tar -czvf normalized-data.tar.gz */*.mufichecker.xml */*.jpg */*.png
+      - uses: AButler/upload-release-assets@v2.0
+        with:
+          files: 'normalized-data.tar.gz'
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
