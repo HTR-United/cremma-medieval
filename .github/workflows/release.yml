@@ -22,7 +22,7 @@ jobs:
           # Generate chocomufin version
           chocomufin -n NFD convert table.csv ./*/*.xml --parser alto
       - name: Compress
-        run: tar -czvf normalized-data.tar.gz */*.mufichecker.xml */*.jpg */*.png
+        run: tar -czvf --ignore-failed-read --ignore-command-error normalized-data.tar.gz */*.mufichecker.xml */*.jpg */*.png
       - uses: AButler/upload-release-assets@v2.0
         with:
           files: 'normalized-data.tar.gz'
