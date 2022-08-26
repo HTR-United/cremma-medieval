@@ -15,7 +15,8 @@ The CREMMA Medieval dataset has been built with eScriptorium (http://traces6.par
 *  Bibliothèqe nationale de France, Arsenal 3516, Crowdsourced transcriptions of the collaborative projects of the Standford Library: Bestiaire de Guillaume le Clerc de Normandie (https://fromthepage.com/stanfordlibraries/guillaume-le-clerc-de-normandie-s-bestiary)
 *  Bibliothèqe nationale de France, fr. 411, *Vie de saint Lambert*  transcribed by A. Pinche (ENC) 
 *  Bibliothèqe nationale de France, fr. 412, *Li Seint Confessor* de Wauchier de Denain transcribed by A. Pinche (ENC) 
-*  Bibliothèqe nationale de France, fr. 844, *Manuscrit du Roi*, Maritem project(https://anr.fr/Projet-ANR-18-CE27-0016) transcribed by V. Mariotti (projet Maritem) 
+*  Bibliothèqe nationale de France, fr. 844, *Manuscrit du Roi*, Maritem project(https://anr.fr/Projet-ANR-18-CE27-0016) transcribed by V. Mariotti (projet Maritem)
+*  Bibliothèqe nationale de France, fr. 1728, *Le Livre de l'enseignement des roys et des princes*, transcribe by Noé Leroy (Projet Gallic(orpor)a)
 *  Bibliothèqe nationale de France, fr. 13496, *Vie de saint Jérôme* transcribed by A. Pinche (ENC) 
 *  Bibliothèqe nationale de France, fr. 17229, *Vie de saint Jérôme* transcribed by A. Pinche (ENC) 
 *  Bibliothèqe nationale de France, fr. 25516, *Beuve de Hantone* transcribed By A. Nolibois (Université d'Aix-Marseille)
@@ -52,6 +53,7 @@ We use releases to make available our HTR models, trained with Kraken, for medie
 | Vaticane, Reg. Lat., 1616             | 14th | 1772              |
 | University of pennsylvania, codex 660 | 14th | 368               |
 | BnF, ms fr. 411                       | 14th | 179               |
+| BnF, ms fr. 1728                       | 14th |622           |
 | University of pennsylvania, codex 909 | 15th | 2513              |
 | All                                   |      | 21656             |
 
