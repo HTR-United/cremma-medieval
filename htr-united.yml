@@ -84,13 +84,13 @@ transcription-guidelines: "As the data come from different projects, transcripti
 production-software: eScriptorium + Kraken
 volume:
 - metric: characters
-  count: 579368
+  count: 592827
 - metric: files
-  count: 263
+  count: 273
 - metric: lines
-  count: 21656
+  count: 22278
 - metric: regions
-  count: 1830
+  count: 1882
 characters:
   mode: NFD
   members:
@@ -111,8 +111,8 @@ characters:
   - .
   - q
   - f
-  - g
   - "\u0303"
+  - g
   - z
   - b
   - h
@@ -141,8 +141,8 @@ characters:
   - T
   - P
   - O
-  - k
   - I
+  - k
   - N
   - '9'
   - "\u036C"
@@ -150,10 +150,10 @@ characters:
   - U
   - G
   - R
-  - F
   - "\u1DD1"
-  - "\uF038"
+  - F
   - "\u0364"
+  - "\uF038"
   - '&'
   - '1'
   - B
@@ -162,31 +162,34 @@ characters:
   - "\xF7"
   - "\u0366"
   - H
-  - "\u1DE4"
   - '7'
+  - "\u1DE4"
   - '2'
   - "\u039B"
+  - "\u0142"
   - '6'
-  - '8'
   - '0'
   - '3'
+  - '8'
   - '4'
   - "\u033D"
   - w
   - '-'
   - '5'
   - "\u036D"
-  - Y
-  - "\_"
-  - "\u0142"
-  - "\u0308"
   - "\xB6"
-  - X
+  - Y
+  - "\u1E9C"
+  - "\_"
+  - "\u27E6"
+  - "\u27E7"
   - "\u0368"
+  - ','
+  - "\u0308"
+  - X
   - "\u0127"
   - K
   - "\u03B4"
   - "\u036B"
   - /
   - "\u0167"
-  - ','
