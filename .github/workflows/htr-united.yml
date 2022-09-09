@@ -88,4 +88,4 @@ jobs:
           pip install htrvx
       - name: Run HTRVX
         run: |
-          htrvx --verbose --group --format alto --check-empty --segmonto --xsd ./*/*.xml
+          htrvx --verbose --group --format alto --check-empty --segmonto --xsd ./*/*.xml --check-image
