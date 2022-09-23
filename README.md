@@ -54,8 +54,8 @@ We use releases to make available our HTR models, trained with Kraken, for medie
 | University of pennsylvania, codex 660 | 14th | 368               |
 | BnF, ms fr. 411                       | 14th | 179               |
 | University of pennsylvania, codex 909 | 15th | 2513              |
-| KBR, ms 9232                          | 15th |                   |
-| All                                   |      | 21656             |
+| KBR, ms 9232                          | 15th | 1006              |
+| All                                   |      | 22662             |
 
 
 If you want to transcribe texts according to our recommendations, you can load the *CremmaLab.json* keyboard in the Escriptorium interface. In order to ensure the correct display of the characters, in the FireFox browser, install Stylus plugin (https://addons.mozilla.org/fr/firefox/addon/styl-us/), then the customisation: MUFI for eScriptorium (https://userstyles.world/style/3915/mufi-for-escriptorium).
