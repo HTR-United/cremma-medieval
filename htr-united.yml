@@ -84,13 +84,13 @@ transcription-guidelines: "As the data come from different projects, transcripti
 production-software: eScriptorium + Kraken
 volume:
 - metric: characters
-  count: 8378428
+  count: 8378344
 - metric: files
   count: 289
 - metric: lines
-  count: 23634
+  count: 23630
 - metric: regions
-  count: 1934
+  count: 1932
 characters:
   mode: NFD
   members:
@@ -181,9 +181,9 @@ characters:
   - Y
   - "\u1E9C"
   - "\_"
-  - ;
   - "\u27E6"
   - "\u27E7"
+  - ;
   - "\u0368"
   - ','
   - "\u0308"
