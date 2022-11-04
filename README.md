@@ -56,12 +56,9 @@ We use releases to make available our HTR models, trained with Kraken, for medie
 | BnF, ms fr. 411                       | 14th | 179               |
 | BnF, ms fr. 1728                       | 14th |622           |
 | University of pennsylvania, codex 909 | 15th | 2513              |
-<<<<<<< HEAD
-| All                                   |      | 22278            |
-=======
 | KBR, ms 9232                          | 15th | 1006              |
 | All                                   |      | 22662             |
->>>>>>> data_KBR_9232_Deleville
+
 
 
 If you want to transcribe texts according to our recommendations, you can load the *CremmaLab.json* keyboard in the Escriptorium interface. In order to ensure the correct display of the characters, in the FireFox browser, install Stylus plugin (https://addons.mozilla.org/fr/firefox/addon/styl-us/), then the customisation: MUFI for eScriptorium (https://userstyles.world/style/3915/mufi-for-escriptorium).
