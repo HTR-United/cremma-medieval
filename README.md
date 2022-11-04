@@ -24,6 +24,7 @@ The CREMMA Medieval dataset has been built with eScriptorium (http://traces6.par
 * Cologny, Bodmer, 168 and Vatican, Reg. Lat., 1616, *Chanson d'Otinel* transcribed by J. -B. Camps (ENC)  from the Geste project (https://github.com/Jean-Baptiste-Camps/Geste)
 * University of pennsylvania, codex 660, pelerinage de mademoiselle Sapience, transcribed by Ariane Pinche (ENC) 
 * University of pennsylvania, codex 909, *Énéide*, transcribed by Lucien Dugaz (ENC)
+* Bibliothèque royale, Bruxelles, ms 9232, *Examens Moraux*, transcribed by Prunelle Deleville (UNIGE)
 
 
 As the data come from different projects, transcriptions have been standardized to strengthen HTR models. We chose a graphemic transcription method, following D. Stutzmann definitions (see bibliography), to have a sign in the image corresponding to a sign in our text: all the abbreviations are kept, and u/v or i/j are not distinguished. The spaces in the dataset are not homogeneously represented, sometimes transcriptions reproduce the manuscript spacing while others use lexical spaces. It must be stressed that spaces are the most important source of error in medieval HTR models. Most of the transcription follow the layout segmentation of the SegmOnto ontology (https://github.com/SegmOnto/examples), separating the main column, margin, numbering, drop capital, etc. 
@@ -55,7 +56,12 @@ We use releases to make available our HTR models, trained with Kraken, for medie
 | BnF, ms fr. 411                       | 14th | 179               |
 | BnF, ms fr. 1728                       | 14th |622           |
 | University of pennsylvania, codex 909 | 15th | 2513              |
+<<<<<<< HEAD
 | All                                   |      | 22278            |
+=======
+| KBR, ms 9232                          | 15th | 1006              |
+| All                                   |      | 22662             |
+>>>>>>> data_KBR_9232_Deleville
 
 
 If you want to transcribe texts according to our recommendations, you can load the *CremmaLab.json* keyboard in the Escriptorium interface. In order to ensure the correct display of the characters, in the FireFox browser, install Stylus plugin (https://addons.mozilla.org/fr/firefox/addon/styl-us/), then the customisation: MUFI for eScriptorium (https://userstyles.world/style/3915/mufi-for-escriptorium).
