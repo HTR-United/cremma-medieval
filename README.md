@@ -12,15 +12,15 @@ The cremma-medieval repository was created in order to make available transcript
 
 The CREMMA Medieval dataset has been built with eScriptorium (http://traces6.paris.inria.fr), an interface for HTR ground truth production, and, Kraken, an HTR and layout segmentation engine. It is composed of fifteen Old French manuscripts written between the 13th and 15th centuries, mainly scanned in high definition and color except for one manuscript (Vatican) which is a black and white document and BnF fr. 17229, 13496 and 411 that come from microfilm scans. The datasets is mostly made from pre-existing transcribed texts and the samples size can be very different from one source manuscript to the other. The basis of the dataset is composed of the following transcriptions : 
 
-*  Bibliothèqe nationale de France, Arsenal 3516, Crowdsourced transcriptions of the collaborative projects of the Standford Library: Bestiaire de Guillaume le Clerc de Normandie (https://fromthepage.com/stanfordlibraries/guillaume-le-clerc-de-normandie-s-bestiary)
-*  Bibliothèqe nationale de France, fr. 411, *Vie de saint Lambert*  transcribed by A. Pinche (ENC) 
-*  Bibliothèqe nationale de France, fr. 412, *Li Seint Confessor* de Wauchier de Denain transcribed by A. Pinche (ENC) 
-*  Bibliothèqe nationale de France, fr. 844, *Manuscrit du Roi*, Maritem project(https://anr.fr/Projet-ANR-18-CE27-0016) transcribed by V. Mariotti (projet Maritem)
-*  Bibliothèqe nationale de France, fr. 1728, *Le Livre de l'enseignement des roys et des princes*, transcribe by Noé Leroy (Projet Gallic(orpor)a)
-*  Bibliothèqe nationale de France, fr. 13496, *Vie de saint Jérôme* transcribed by A. Pinche (ENC) 
-*  Bibliothèqe nationale de France, fr. 17229, *Vie de saint Jérôme* transcribed by A. Pinche (ENC) 
-*  Bibliothèqe nationale de France, fr. 25516, *Beuve de Hantone* transcribed By A. Nolibois (Université d'Aix-Marseille)
-*  Bibliothèqe nationale de France, fr.22550, *Les Sept Sages de Thèbes*, this project just started in Geneva under the direction of Y. Foehr-Janssen (UNIGE), the different have been transcribed by Camille Carnaille (ULB/UNIGE) (fol.157r, 163v, 174v, 178v, 186v, 200v), Prunelle Deleville (UNIGE) (fol. 157v, 178r, 186r, 200r, 204r, 343v), Sophie Lecomte (ULB) (fol. 174v), Aminoel Meylan (UNIGE) (169r), Simone Ventura (ULB) (fol. 163r). 
+*  Bibliothèque nationale de France, Arsenal 3516, Crowdsourced transcriptions of the collaborative projects of the Standford Library: Bestiaire de Guillaume le Clerc de Normandie (https://fromthepage.com/stanfordlibraries/guillaume-le-clerc-de-normandie-s-bestiary)
+*  Bibliothèque nationale de France, fr. 411, *Vie de saint Lambert*  transcribed by A. Pinche (ENC) 
+*  Bibliothèque nationale de France, fr. 412, *Li Seint Confessor* de Wauchier de Denain transcribed by A. Pinche (ENC) 
+*  Bibliothèque nationale de France, fr. 844, *Manuscrit du Roi*, Maritem project(https://anr.fr/Projet-ANR-18-CE27-0016) transcribed by V. Mariotti (projet Maritem)
+*  Bibliothèque nationale de France, fr. 1728, *Le Livre de l'enseignement des roys et des princes*, transcribe by Noé Leroy (Projet Gallic(orpor)a)
+*  Bibliothèque nationale de France, fr. 13496, *Vie de saint Jérôme* transcribed by A. Pinche (ENC) 
+*  Bibliothèque nationale de France, fr. 17229, *Vie de saint Jérôme* transcribed by A. Pinche (ENC) 
+*  Bibliothèque nationale de France, fr. 25516, *Beuve de Hantone* transcribed By A. Nolibois (Université d'Aix-Marseille)
+*  Bibliothèque nationale de France, fr.22550, *Les Sept Sages de Thèbes*, this project just started in Geneva under the direction of Y. Foehr-Janssen (UNIGE), the different have been transcribed by Camille Carnaille (ULB/UNIGE) (fol.157r, 163v, 174v, 178v, 186v, 200v), Prunelle Deleville (UNIGE) (fol. 157v, 178r, 186r, 200r, 204r, 343v), Sophie Lecomte (ULB) (fol. 174v), Aminoel Meylan (UNIGE) (169r), Simone Ventura (ULB) (fol. 163r). 
 * Cologny, Bodmer, 168 and Vatican, Reg. Lat., 1616, *Chanson d'Otinel* transcribed by J. -B. Camps (ENC)  from the Geste project (https://github.com/Jean-Baptiste-Camps/Geste)
 * University of pennsylvania, codex 660, pelerinage de mademoiselle Sapience, transcribed by Ariane Pinche (ENC) 
 * University of pennsylvania, codex 909, *Énéide*, transcribed by Lucien Dugaz (ENC)
