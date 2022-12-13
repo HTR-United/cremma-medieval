@@ -1,4 +1,4 @@
-<img src="dim-map.png" width=150 align=right>
+<img src="dim-map.png" width=150 align=right> <img src="./cremma_medieval.png" width="180" align=right>
 
 # cremma-medieval
 
