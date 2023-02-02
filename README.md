@@ -37,6 +37,8 @@ We use releases to make available our HTR models, trained with Kraken, for medie
 - 1.0.0 Bicerin, accuracy 95,49% (21/07/13)
 - 1.1.0 Bicerin, accuracy 95,30% (22/06/20)
 
+Models and data are under a CC by Creative Commons Licence. 
+
 *Table summarizing the corpus (state 22/07/01)*
 
  Manuscript                            | Date | Transcribed Lines |
