@@ -1,0 +1,53 @@
+# This file has been generated automatically with HTR-United <3 Github Actions form
+name: Tests
+'on':
+  - push
+  - pull_request
+permissions:
+  contents: write
+jobs:
+  HTRUC:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install htruc
+      - name: Run HTRUC
+        run: |
+          htruc test htr-united.yml
+  ChocoMufin:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install chocomufin
+      - name: Run ChocoMufin
+        run: |
+          chocomufin --norm NFD control table.csv ./data/*/*.xml --ignore chocomufin.xml
+  HTRVX:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install htrvx
+      - name: Run HTRVX
+        run: |
+          htrvx --verbose --verbose-level low --group --format alto --check-empty --segmonto --xsd ./data/*/*.xml

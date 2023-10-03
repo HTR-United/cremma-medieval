@@ -1,0 +1,59 @@
+name: Build
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - table.csv
+      - "data/*/*.xml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install chocomufin htr-united-metadata-generator htruc anybadge
+      - name: Run Report
+        run: |
+          # Generate chocomufin version
+          chocomufin -n NFD convert -s .chocomufin.xml table.csv ./data/*/*.xml
+      - name: Pushing
+        run: |
+          git add data/*/*.xml
+          git commit -m "[Automatic] Update Chocomufin Files" || echo "Nothing to commit"
+          git push || echo "Nothing to push"
+      - name: Run Report
+        run: |
+          humGenerator --chars -n NFD --parse alto --group ./data/*/*.chocomufin.xml --github-envs --to-json updated_metrics.json
+          cat envs.txt >> $GITHUB_ENV
+      - name: Get HTR United Badge Template
+        if: github.ref == 'refs/heads/main'
+        uses: andymckay/get-gist-action@master
+        with:
+          gistURL: https://gist.github.com/PonteIneptique/7813bb99f234b334fbf9c6c429ec2406
+      - name: Automatically update the Catalog & the Badges
+        if: github.ref == 'refs/heads/main'
+        run: |-
+          htruc update-volumes htr-united.yml updated_metrics.json --inplace
+          # Generate badges
+          mkdir -p badges
+          anybadge --value=${{ env.HTRUNITED_CHARS }} --file=badges/characters.svg --label=Characters --color=#007ec6 --overwrite --template=/tmp/anybadge.svg
+          anybadge --value=${{ env.HTRUNITED_REGNS }} --file=badges/regions.svg --label=Regions --color=#007ec6 --overwrite --template=/tmp/anybadge.svg
+          anybadge --value=${{ env.HTRUNITED_LINES }} --file=badges/lines.svg --label=Lines --color=#007ec6 --overwrite --template=/tmp/anybadge.svg
+          anybadge --value=${{ env.HTRUNITED_FILES }} --file=badges/files.svg --label="XML Files" --color=#007ec6 --overwrite --template=/tmp/anybadge.svg
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add htr-united.yml ./badges/
+          git commit -m "[Automatic] Update the Catalog & the Badges" || echo "Nothing to commit"
+          git push || echo "Nothing to push"
