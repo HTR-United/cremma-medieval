@@ -88,8 +88,8 @@ characters:
   - M
   - "'"
   - ꝰ
-  - ́
   - T
+  - ́
   - P
   - O
   - k
@@ -180,11 +180,11 @@ transcription-guidelines: "As the data come from different projects, transcripti
   \ pour les manuscrits du Xe au XVe siècle, 2022, ⟨hal-03697382>, en ligne : <https://hal.archives-ouvertes.fr/hal-03697382>."
 url: https://github.com/HTR-United/cremma-medieval
 volume:
-- count: 612134
+- count: 612000
   metric: characters
 - count: 279
   metric: files
-- count: 22913
+- count: 22848
   metric: lines
-- count: 1889
+- count: 1851
   metric: regions
